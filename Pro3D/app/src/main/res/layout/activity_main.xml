@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_orange_light"
+        tools:layout_editor_absoluteX="279dp"
+        tools:layout_editor_absoluteY="166dp">
+
+        <TableRow
+            android:layout_width="104dp"
+            android:layout_height="36dp"
+            android:background="@android:color/holo_orange_dark"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="412dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/droid_sans"
+                android:text="@string/title"
+                android:textFontWeight="0"
+                android:textSize="36sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/inp_projName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/droid_sans"
+                android:inputType="textPersonName"
+                android:text="@string/projName_Placeholder"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/inp_folderDir"
+                android:layout_width="155dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:fontFamily="@font/droid_sans"
+                android:inputType="textPersonName"
+                android:text="@string/srcDir_Placeholder"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_selectFolder"
+                style="@android:style/Holo.Light.ButtonBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_orange_dark"
+                android:fontFamily="@font/droid_sans"
+                android:text="@string/btn_selectFolder"
+                android:textSize="18sp" />
+
+        </TableRow>
+		<TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:background="@android:color/holo_orange_light" />
+        </TableRow>
+		<TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_start"
+                style="@android:style/Holo.Light.ButtonBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_orange_dark"
+                android:fontFamily="@font/droid_sans"
+                android:text="@string/btn_start"
+                android:textSize="18sp" />
+
+        </TableRow>
+		<TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/prgBar_completion"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:max="100"
+                android:progress="0"
+                android:progressTint="@android:color/holo_orange_dark"
+                android:scaleY="8" />
+        </TableRow>
+		<TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/txt_log"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textMultiLine" />
+        </TableRow>
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>
