@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        bool folderSelected = false;
+        boolean folderSelected = false;
 
         Button selectFolder = findViewById(R.id.btn_selectFolder);
         selectFolder.setOnClickListener( new View.OnClickListener() {
