@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Pro3D</string>
-    <string name="title">Pro3D - ver 0.0.2</string>
+    <string name="title">Pro3D - ver 0.1.0</string>
     <string name="projName_Placeholder">Project Name</string>
-    <string name="srcDir_Placeholder">Please select dataset folder</string>
-    <string name="btn_selectFolder">Open folder</string>
+    <string name="srcDir_Placeholder">Please select image dataset</string>
+    <string name="btn_selectFolder">Open images</string>
     <string name="btn_start">Start</string>
 </resources>
