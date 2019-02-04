@@ -37,13 +37,13 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        boolean folderSelected = false;
-
+        // SELECT IMAGES
         Button selectImages = findViewById(R.id.btn_selectImages);
-        selectImages.setOnClickListener( new View.OnClickListener() {
+        selectImages.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
                 DialogProperties properties = new DialogProperties();
@@ -63,7 +63,8 @@ public class MainActivity extends AppCompatActivity {
                     public void onSelectedFilePaths(String[] files) {
                         //files is the array of the paths of files selected by the Application User.
                         if(files.length >= 2){
-                            Toast.makeText(MainActivity.this,"Thank you. Please continue.",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this,"Thank you. We will now continue with the process.",Toast.LENGTH_SHORT).show();
+                            Log.i("fricatta", files.toString());
                         } else {
                             Toast.makeText(MainActivity.this,"Please select at least two images.",Toast.LENGTH_SHORT).show();
                         }
@@ -76,49 +77,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button selectFolder = findViewById(R.id.btn_selectImages);
-        selectFolder.setOnClickListener( new View.OnClickListener() {
-            public void onClick(View v) {
-
-                DialogProperties properties = new DialogProperties();
-
-                properties.selection_mode = DialogConfigs.MULTI_MODE;
-                properties.selection_type = DialogConfigs.FILE_SELECT;
-                properties.root = new File(DialogConfigs.DEFAULT_DIR);
-                properties.error_dir = new File(DialogConfigs.DEFAULT_DIR);
-                properties.offset = new File(DialogConfigs.DEFAULT_DIR);
-                properties.extensions = null;
-
-                FilePickerDialog dialog = new FilePickerDialog(MainActivity.this,properties);
-                dialog.setTitle("Select your images");
-
-                dialog.setDialogSelectionListener(new DialogSelectionListener() {
-                    @Override
-                    public void onSelectedFilePaths(String[] files) {
-                        //files is the array of the paths of files selected by the Application User.
-                        if(files.length >= 2){
-                            Toast.makeText(MainActivity.this,"Thank you. Please continue.",Toast.LENGTH_SHORT).show();
-                        } else {
-                            Toast.makeText(MainActivity.this,"Please select at least two images.",Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                });
-
-                dialog.show();
-
-                Log.i("fricatta", "btn_selectImages clicked!");
-            }
-        });
-
-        Button start = findViewById(R.id.btn_start);
+        // START PROCESSING
+        /*Button start = findViewById(R.id.btn_start);
         start.setOnClickListener( new View.OnClickListener() {
             public void onClick(View v) {
-                // TODO Make this start another activity where the earlier files will be processed.
-                // TODO Make it so when this button is clicked and there is no folder selected, an alert pops up
+                String[] images;
 
                 Log.i("fricatta", "btn_start clicked!");
             }
-        });
+        });*/
     }
 
     public void onRequestPermissionsResult(int requestCode,@NonNull String permissions[],@NonNull int[] grantResults) {
