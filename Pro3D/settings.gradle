@@ -1,2 +1,2 @@
-include ':app', 'OpenCVLibrary'
+include ':app'
 include 'com.github.angads25:filepicker:1.1.1'
