@@ -22,6 +22,7 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 import java.io.File;
 import android.util.Log;
+import android.hardware.Camera;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
