@@ -65,27 +65,16 @@ public class MainActivity extends AppCompatActivity {
                         if(files.length >= 2){
                             Toast.makeText(MainActivity.this,"Thank you. We will now continue with the process.",Toast.LENGTH_SHORT).show();
                             Log.i("fricatta", files.toString());
+
                         } else {
                             Toast.makeText(MainActivity.this,"Please select at least two images.",Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
-
                 dialog.show();
-
                 Log.i("fricatta", "btn_selectImages clicked!");
             }
         });
-
-        // START PROCESSING
-        /*Button start = findViewById(R.id.btn_start);
-        start.setOnClickListener( new View.OnClickListener() {
-            public void onClick(View v) {
-                String[] images;
-
-                Log.i("fricatta", "btn_start clicked!");
-            }
-        });*/
     }
 
     public void onRequestPermissionsResult(int requestCode,@NonNull String permissions[],@NonNull int[] grantResults) {
