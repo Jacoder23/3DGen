@@ -3,6 +3,8 @@
 package jcdr23.com.pro3d;
 
 import android.support.v7.app.AppCompatActivity;
+import java.util.Timer;
+import java.util.TimerTask;
 import android.os.Bundle;
 import android.widget.Button;
 import android.view.View;
@@ -65,6 +67,16 @@ public class MainActivity extends AppCompatActivity {
                         if(files.length >= 2){
                             Toast.makeText(MainActivity.this,"Thank you. We will now continue with the process.",Toast.LENGTH_SHORT).show();
                             Log.i("fricatta", files.toString());
+                            Timer timer = new Timer();
+                            TimerTask t = new TimerTask() {
+                                int i = 0;
+                                @Override
+                                public void run() {
+                                    Log.i("fricatta",Integer.toString(i));
+                                    i++;
+                                }
+                            };
+                            timer.scheduleAtFixedRate(t,1,1);
 
                         } else {
                             Toast.makeText(MainActivity.this,"Please select at least two images.",Toast.LENGTH_SHORT).show();
