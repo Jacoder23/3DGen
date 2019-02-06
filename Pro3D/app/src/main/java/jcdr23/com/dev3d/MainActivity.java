@@ -1,6 +1,6 @@
 // If you are ever feeling angry or down, just remember fricatta. - Albert
 
-package jcdr23.com.pro3d;
+package jcdr23.com.dev3d;
 
 import android.support.v7.app.AppCompatActivity;
 import java.util.Timer;
@@ -8,44 +8,13 @@ import java.util.TimerTask;
 import android.os.Bundle;
 import android.widget.Button;
 import android.view.View;
-import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.RadioGroup;
 import android.widget.Toast;
 import java.io.File;
 import android.util.Log;
-import android.hardware.Camera;
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.app.AlertDialog.Builder;
-import android.content.DialogInterface;
-import android.content.DialogInterface.OnClickListener;
-import android.view.MenuItem;
-import android.app.Dialog;
 
-import org.opencv.android.BaseLoaderCallback;
-import org.opencv.android.CameraBridgeViewBase.CvCameraViewFrame;
-import org.opencv.android.LoaderCallbackInterface;
 import org.opencv.android.OpenCVLoader;
-import org.opencv.core.Core;
-import org.opencv.core.CvType;
-import org.opencv.core.Mat;
-import org.opencv.core.MatOfFloat;
-import org.opencv.core.MatOfInt;
-import org.opencv.core.Point;
-import org.opencv.core.Scalar;
-import org.opencv.core.Size;
-import org.opencv.android.CameraBridgeViewBase;
-import org.opencv.android.CameraBridgeViewBase.CvCameraViewListener2;
-import org.opencv.imgproc.Imgproc;
 
 import com.github.angads25.filepicker.controller.DialogSelectionListener;
 import com.github.angads25.filepicker.model.DialogConfigs;
