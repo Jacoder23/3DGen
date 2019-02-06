@@ -4,11 +4,11 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "jcdr23.com.pro3d"
+        applicationId "jcdr23.com.dev3d"
         minSdkVersion 23
         targetSdkVersion 28
         versionCode 1
-        versionName "0.0.2.3"
+        versionName "0.0.0.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         /*ndk {
             abiFilters "armeabi-v7a"

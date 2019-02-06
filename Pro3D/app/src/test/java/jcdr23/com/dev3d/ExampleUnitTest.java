@@ -1,4 +1,4 @@
-package jcdr23.com.pro3d;
+package jcdr23.com.dev3d;
 
 import org.junit.Test;
 
