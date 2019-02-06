@@ -6,4 +6,5 @@
     <string name="btn_selectFolder">Select output folder</string>
     <string name="btn_selectImages">Open images</string>
     <string name="btn_start">Start</string>
+    <string name="focal_Placeholder">Enter focal length</string>
 </resources>
