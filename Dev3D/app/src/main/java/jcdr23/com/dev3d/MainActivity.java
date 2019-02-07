@@ -60,13 +60,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // OpenCV check
-        if (!OpenCVLoader.initDebug()) {
+        /*if (!OpenCVLoader.initDebug()) {
             Log.d("ERROR", "Unable to load OpenCV");
             Toast.makeText(MainActivity.this, "Unable to load OpenCV", Toast.LENGTH_SHORT).show();
         } else {
             Log.d("SUCCESS", "OpenCV loaded");
             Toast.makeText(MainActivity.this,"OpenCV loaded",Toast.LENGTH_SHORT).show();
-        }
+        }*/
 
         // SELECT IMAGES
         Button selectImages = findViewById(R.id.btn_selectImages);
