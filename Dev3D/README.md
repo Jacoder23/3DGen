@@ -5,9 +5,8 @@ Dev3D is an Android app for creating 3D models from a set of images. Made for a 
 # Build Instructions
 Build it using Android Studio. That simple. Delete then rebuild Gradle files when necessary.
 
-Tested only on:
- - Android Studio 3.3
- - Windows 10 Home
+Tested on:
+ - Android Studio 3.3 & Windows 10 Home
 
 # What's Next?
 
