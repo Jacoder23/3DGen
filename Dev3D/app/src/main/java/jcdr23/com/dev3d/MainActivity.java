@@ -45,6 +45,8 @@ import org.opencv.core.Size;
 import org.opencv.android.CameraBridgeViewBase;
 import org.opencv.android.CameraBridgeViewBase.CvCameraViewListener2;
 import org.opencv.imgproc.Imgproc;
+import org.opencv.android.OpenCVLoader;
+import org.opencv.android.Utils;
 
 import com.github.angads25.filepicker.controller.DialogSelectionListener;
 import com.github.angads25.filepicker.model.DialogConfigs;
@@ -60,13 +62,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // OpenCV check
-        /*if (!OpenCVLoader.initDebug()) {
+        if (!OpenCVLoader.initDebug()) {
             Log.d("ERROR", "Unable to load OpenCV");
             Toast.makeText(MainActivity.this, "Unable to load OpenCV", Toast.LENGTH_SHORT).show();
         } else {
             Log.d("SUCCESS", "OpenCV loaded");
             Toast.makeText(MainActivity.this,"OpenCV loaded",Toast.LENGTH_SHORT).show();
-        }*/
+        }
 
         // SELECT IMAGES
         Button selectImages = findViewById(R.id.btn_selectImages);
