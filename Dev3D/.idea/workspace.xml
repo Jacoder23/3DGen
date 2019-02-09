@@ -7,9 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0daf0ea-3c49-44f3-aa2f-6dadbc404d59" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +33,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gradle" value="3" />
-          <entry key="java" value="2" />
+          <entry key="java" value="4" />
           <entry key="txt" value="1" />
           <entry key="xml" value="3" />
         </counts>
@@ -43,21 +41,21 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="3" />
-          <entry key="JAVA" value="2" />
+          <entry key="JAVA" value="4" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="gradle" value="1" />
+          <entry key="gradle" value="3" />
           <entry key="java" value="8" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Groovy" value="1" />
+          <entry key="Groovy" value="3" />
           <entry key="JAVA" value="8" />
           <entry key="XML" value="1" />
         </counts>
@@ -81,15 +79,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/openCVLibrary340dev/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/openCVLibrary340dev/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -100,10 +89,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/android/CameraGLRendererBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1319">
+              <caret line="203" column="44" selection-start-line="203" selection-start-column="44" selection-end-line="203" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/android/Camera2Renderer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+            <state relative-caret-position="187">
+              <caret line="11" column="82" lean-forward="true" selection-start-line="11" selection-start-column="82" selection-end-line="11" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -135,10 +145,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/jcdr23/com/dev3d/MainActivity.java" />
         <option value="$PROJECT_DIR$/openCVLibrary340dev/build.gradle" />
         <option value="$PROJECT_DIR$/openCVLibrary340dev/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
       </list>
     </option>
   </component>
@@ -160,6 +170,10 @@
             <path>
               <item name="Dev3D" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="Dev3D" type="1abcf292:AndroidViewProjectNode" />
+              <item name="openCVLibrary340dev" type="feadf853:AndroidModuleNode" />
             </path>
             <path>
               <item name="Dev3D" type="1abcf292:AndroidViewProjectNode" />
@@ -341,6 +355,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" visible="true" weight="0.32995737" />
       <window_info id="Structure" side_tool="true" />
@@ -395,29 +410,15 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_launcher_foreground.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/jcdr23/com/dev3d/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="50" column="61" selection-start-line="50" selection-start-column="61" selection-end-line="50" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/import-summary.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/openCVLibrary340dev/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/import-summary.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/openCVLibrary340dev/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -426,6 +427,37 @@
         </state>
       </provider>
       <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jcdr23/com/dev3d/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="50" column="61" selection-start-line="50" selection-start-column="61" selection-end-line="50" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/android/CameraGLRendererBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1319">
+          <caret line="203" column="44" selection-start-line="203" selection-start-column="44" selection-end-line="203" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="82" lean-forward="true" selection-start-line="11" selection-start-column="82" selection-end-line="11" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/android/Camera2Renderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
