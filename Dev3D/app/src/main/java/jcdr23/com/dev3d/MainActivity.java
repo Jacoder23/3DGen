@@ -20,6 +20,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 import java.io.File;
 import android.util.Log;
@@ -96,8 +97,9 @@ public class MainActivity extends AppCompatActivity {
                     public void onSelectedFilePaths(String[] files) {
                         //files is the array of the paths of files selected by the Application User.
                         if(files.length >= 2){
-                            Log.i("fricatta", stringFromJNI());
-                            Toast.makeText(MainActivity.this,stringFromJNI(),Toast.LENGTH_SHORT).show();
+                            Log.i("fricatta", "Alfred");
+                            TextView log = findViewById(R.id.txt_log);
+                            log.setText( stringFromJNI() );
                             Log.i("fricatta", files.toString());
                             Timer timer = new Timer();
                             TimerTask t = new TimerTask() {
