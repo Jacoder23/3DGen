@@ -42,14 +42,22 @@ import org.opencv.core.CvType;
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfFloat;
 import org.opencv.core.MatOfInt;
+import org.opencv.core.MatOfKeyPoint;
 import org.opencv.core.Point;
 import org.opencv.core.Scalar;
 import org.opencv.core.Size;
 import org.opencv.android.CameraBridgeViewBase;
 import org.opencv.android.CameraBridgeViewBase.CvCameraViewListener2;
+import org.opencv.features2d.DescriptorExtractor;
+import org.opencv.features2d.DescriptorMatcher;
 import org.opencv.imgproc.Imgproc;
+import org.opencv.core.Rect;
+import org.opencv.imgcodecs.Imgcodecs;
+import org.opencv.objdetect.CascadeClassifier;
 import org.opencv.android.OpenCVLoader;
 import org.opencv.android.Utils;
+import org.opencv.features2d.ORB;
+
 
 import com.github.angads25.filepicker.controller.DialogSelectionListener;
 import com.github.angads25.filepicker.model.DialogConfigs;
@@ -101,21 +109,30 @@ public class MainActivity extends AppCompatActivity {
                             Log.i("fricatta", "Alfred");
                             TextView log = findViewById(R.id.txt_log);
                             try {
-                                log.setText(stringFromJNI());
+                                log.setText("Setup is successful. Continuing.");
+                                Timer timer = new Timer();
+                                TimerTask t = new TimerTask() {
+                                    double i = 0;
+                                    TextView log = findViewById(R.id.txt_log);
+                                    @Override
+                                    public void run() {
+                                        log.setText("Time expended (seconds): " + Double.toString(i/1000));
+                                        i++;
+                                    }
+                                };
+                                timer.scheduleAtFixedRate(t,1,1);
+                                for(int i = 0; i < files.length; i++) {
+                                    Mat img = Imgcodecs.imread(files[0]);
+                                    MatOfKeyPoint keypoints = new MatOfKeyPoint();
+                                    ORB orb = ORB.create();
+                                    orb.detect(img, keypoints);
+                                    Mat des = new Mat();
+                                    orb.compute(img, keypoints, des);
+                                    Log.i("fricatta", des.toString());
+                                }
                             } catch (Exception e){
                                 log.setText("An error has occurred");
                             }
-                            Log.i("fricatta", files.toString());
-                            Timer timer = new Timer();
-                            TimerTask t = new TimerTask() {
-                                int i = 0;
-                                @Override
-                                public void run() {
-                                    Log.i("fricatta",Integer.toString(i));
-                                    i++;
-                                }
-                            };
-                            timer.scheduleAtFixedRate(t,1,1);
                         } else {
                             Toast.makeText(MainActivity.this,"Please select at least two images.",Toast.LENGTH_SHORT).show();
                         }

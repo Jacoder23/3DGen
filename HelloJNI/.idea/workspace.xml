@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b072066b-a2a1-4181-bb8f-d37532904ce1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Dev3D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Dev3D/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dev3D/app/src/main/cpp/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Dev3D/app/src/main/cpp/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dev3D/app/src/main/java/jcdr23/com/dev3d/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Dev3D/app/src/main/java/jcdr23/com/dev3d/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +24,7 @@
     <session id="182715705">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
