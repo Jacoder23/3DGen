@@ -61,7 +61,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        System.loadLibrary("openCV340dev");
+        /*System.loadLibrary("main");
+        System.loadLibrary("SFM");*/
 
         // OpenCV check
         if (!OpenCVLoader.initDebug()) {
