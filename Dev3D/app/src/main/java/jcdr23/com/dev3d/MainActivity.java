@@ -61,6 +61,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        System.loadLibrary("openCV340dev");
+
         // OpenCV check
         if (!OpenCVLoader.initDebug()) {
             Log.d("ERROR", "Unable to load OpenCV");
