@@ -2,256 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba1f3e4a-5b0c-4f3f-b08a-4e8e6d7e8c71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cpp/main'.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpp/main'.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/jcdr23/com/dev3d/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/jcdr23/com/dev3d/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/lint.xml" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/lint.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/aidl/org/opencv/engine/OpenCVEngineInterface.aidl" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/aidl/org/opencv/engine/OpenCVEngineInterface.aidl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/android/AsyncServiceHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/android/AsyncServiceHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/android/BaseLoaderCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/android/BaseLoaderCallback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/android/CameraBridgeViewBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/android/CameraBridgeViewBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/android/FpsMeter.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/android/FpsMeter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/android/InstallCallbackInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/android/InstallCallbackInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/android/JavaCameraView.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/android/JavaCameraView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/android/LoaderCallbackInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/android/LoaderCallbackInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/android/OpenCVLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/android/OpenCVLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/android/StaticHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/android/StaticHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/android/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/android/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/aruco/Aruco.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/aruco/Aruco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/aruco/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/aruco/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/aruco/CharucoBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/aruco/CharucoBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/aruco/DetectorParameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/aruco/DetectorParameters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/aruco/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/aruco/Dictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/aruco/GridBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/aruco/GridBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/bgsegm/BackgroundSubtractorCNT.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/bgsegm/BackgroundSubtractorCNT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/bgsegm/BackgroundSubtractorGMG.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/bgsegm/BackgroundSubtractorGMG.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/bgsegm/BackgroundSubtractorGSOC.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/bgsegm/BackgroundSubtractorGSOC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/bgsegm/BackgroundSubtractorLSBP.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/bgsegm/BackgroundSubtractorLSBP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/bgsegm/BackgroundSubtractorLSBPDesc.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/bgsegm/BackgroundSubtractorLSBPDesc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/bgsegm/BackgroundSubtractorMOG.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/bgsegm/BackgroundSubtractorMOG.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/bgsegm/Bgsegm.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/bgsegm/Bgsegm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/bgsegm/SyntheticSequenceGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/bgsegm/SyntheticSequenceGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/bioinspired/Bioinspired.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/bioinspired/Bioinspired.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/bioinspired/Retina.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/bioinspired/Retina.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/bioinspired/RetinaFastToneMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/bioinspired/RetinaFastToneMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/bioinspired/TransientAreasSegmentationModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/bioinspired/TransientAreasSegmentationModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/calib3d/Calib3d.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/calib3d/Calib3d.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/calib3d/StereoBM.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/calib3d/StereoBM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/calib3d/StereoMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/calib3d/StereoMatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/calib3d/StereoSGBM.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/calib3d/StereoSGBM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/Algorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/Core.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/Core.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/CvException.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/CvException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/CvType.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/CvType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/DMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/DMatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/KeyPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/KeyPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/Mat.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/Mat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/MatOfByte.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/MatOfByte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/MatOfDMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/MatOfDMatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/MatOfDouble.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/MatOfDouble.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/MatOfFloat.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/MatOfFloat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/MatOfFloat4.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/MatOfFloat4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/MatOfFloat6.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/MatOfFloat6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/MatOfInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/MatOfInt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/MatOfInt4.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/MatOfInt4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/MatOfKeyPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/MatOfKeyPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/MatOfPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/MatOfPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/MatOfPoint2f.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/MatOfPoint2f.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/MatOfPoint3.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/MatOfPoint3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/MatOfPoint3f.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/MatOfPoint3f.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/MatOfRect.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/MatOfRect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/MatOfRect2d.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/MatOfRect2d.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/Point3.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/Point3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/Range.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/Range.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/Rect.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/Rect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/Rect2d.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/Rect2d.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/RotatedRect.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/RotatedRect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/Scalar.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/Scalar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/Size.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/Size.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/TermCriteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/TermCriteria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/TickMeter.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/core/TickMeter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/dnn/DictValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/dnn/DictValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/dnn/Dnn.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/dnn/Dnn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/dnn/Layer.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/dnn/Layer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/dnn/Net.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/dnn/Net.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/face/BIF.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/face/BIF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/face/BasicFaceRecognizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/face/BasicFaceRecognizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/face/EigenFaceRecognizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/face/EigenFaceRecognizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/face/Face.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/face/Face.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/face/FaceRecognizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/face/FaceRecognizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/face/Facemark.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/face/Facemark.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/face/FacemarkAAM.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/face/FacemarkAAM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/face/FacemarkKazemi.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/face/FacemarkKazemi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/face/FacemarkLBF.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/face/FacemarkLBF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/face/FisherFaceRecognizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/face/FisherFaceRecognizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/face/LBPHFaceRecognizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/face/LBPHFaceRecognizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/face/PredictCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/face/PredictCollector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/face/StandardCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/face/StandardCollector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/AKAZE.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/AKAZE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/AgastFeatureDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/AgastFeatureDetector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/BFMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/BFMatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/BOWImgDescriptorExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/BOWImgDescriptorExtractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/BOWKMeansTrainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/BOWKMeansTrainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/BOWTrainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/BOWTrainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/BRISK.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/BRISK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/DescriptorExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/DescriptorExtractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/DescriptorMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/DescriptorMatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/FastFeatureDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/FastFeatureDetector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/Feature2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/Feature2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/FeatureDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/FeatureDetector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/Features2d.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/Features2d.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/FlannBasedMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/FlannBasedMatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/GFTTDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/GFTTDetector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/KAZE.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/KAZE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/MSER.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/MSER.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/ORB.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/ORB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/Params.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/Params.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/img_hash/AverageHash.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/img_hash/AverageHash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/img_hash/BlockMeanHash.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/img_hash/BlockMeanHash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/img_hash/ColorMomentHash.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/img_hash/ColorMomentHash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/img_hash/ImgHashBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/img_hash/ImgHashBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/img_hash/Img_hash.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/img_hash/Img_hash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/img_hash/MarrHildrethHash.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/img_hash/MarrHildrethHash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/img_hash/PHash.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/img_hash/PHash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/img_hash/RadialVarianceHash.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/img_hash/RadialVarianceHash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/imgcodecs/Imgcodecs.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/imgcodecs/Imgcodecs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/imgproc/CLAHE.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/imgproc/CLAHE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/imgproc/Imgproc.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/imgproc/Imgproc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/imgproc/LineSegmentDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/imgproc/LineSegmentDetector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/imgproc/Moments.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/imgproc/Moments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/imgproc/Subdiv2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/imgproc/Subdiv2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ml/ANN_MLP.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ml/ANN_MLP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ml/ANN_MLP_ANNEAL.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ml/ANN_MLP_ANNEAL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ml/Boost.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ml/Boost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ml/DTrees.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ml/DTrees.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ml/EM.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ml/EM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ml/KNearest.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ml/KNearest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ml/LogisticRegression.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ml/LogisticRegression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ml/Ml.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ml/Ml.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ml/NormalBayesClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ml/NormalBayesClassifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ml/ParamGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ml/ParamGrid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ml/RTrees.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ml/RTrees.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ml/SVM.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ml/SVM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ml/SVMSGD.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ml/SVMSGD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ml/StatModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ml/StatModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ml/TrainData.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ml/TrainData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/objdetect/BaseCascadeClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/objdetect/BaseCascadeClassifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/objdetect/CascadeClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/objdetect/CascadeClassifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/objdetect/HOGDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/objdetect/HOGDescriptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/objdetect/Objdetect.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/objdetect/Objdetect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/osgi/OpenCVInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/osgi/OpenCVInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/osgi/OpenCVNativeLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/osgi/OpenCVNativeLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/phase_unwrapping/HistogramPhaseUnwrapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/phase_unwrapping/HistogramPhaseUnwrapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/phase_unwrapping/PhaseUnwrapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/phase_unwrapping/PhaseUnwrapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/phase_unwrapping/Phase_unwrapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/phase_unwrapping/Phase_unwrapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/photo/AlignExposures.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/photo/AlignExposures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/photo/AlignMTB.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/photo/AlignMTB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/photo/CalibrateCRF.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/photo/CalibrateCRF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/photo/CalibrateDebevec.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/photo/CalibrateDebevec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/photo/CalibrateRobertson.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/photo/CalibrateRobertson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/photo/MergeDebevec.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/photo/MergeDebevec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/photo/MergeExposures.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/photo/MergeExposures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/photo/MergeMertens.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/photo/MergeMertens.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/photo/MergeRobertson.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/photo/MergeRobertson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/photo/Photo.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/photo/Photo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/photo/Tonemap.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/photo/Tonemap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/photo/TonemapDrago.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/photo/TonemapDrago.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/photo/TonemapDurand.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/photo/TonemapDurand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/photo/TonemapMantiuk.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/photo/TonemapMantiuk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/photo/TonemapReinhard.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/photo/TonemapReinhard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/plot/Plot.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/plot/Plot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/plot/Plot2d.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/plot/Plot2d.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/structured_light/GrayCodePattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/structured_light/GrayCodePattern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/structured_light/Params.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/structured_light/Params.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/structured_light/SinusoidalPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/structured_light/SinusoidalPattern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/structured_light/StructuredLightPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/structured_light/StructuredLightPattern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/structured_light/Structured_light.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/structured_light/Structured_light.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/text/BaseOCR.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/text/BaseOCR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/text/Callback.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/text/Callback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/text/ClassifierCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/text/ClassifierCallback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/text/ERFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/text/ERFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/text/OCRBeamSearchDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/text/OCRBeamSearchDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/text/OCRHMMDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/text/OCRHMMDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/text/OCRTesseract.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/text/OCRTesseract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/text/Text.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/text/Text.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/text/TextDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/text/TextDetector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/text/TextDetectorCNN.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/text/TextDetectorCNN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/tracking/MultiTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/tracking/MultiTracker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/tracking/Tracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/tracking/Tracker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/tracking/TrackerBoosting.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/tracking/TrackerBoosting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/tracking/TrackerGOTURN.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/tracking/TrackerGOTURN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/tracking/TrackerKCF.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/tracking/TrackerKCF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/tracking/TrackerMIL.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/tracking/TrackerMIL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/tracking/TrackerMOSSE.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/tracking/TrackerMOSSE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/tracking/TrackerMedianFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/tracking/TrackerMedianFlow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/tracking/TrackerTLD.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/tracking/TrackerTLD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/tracking/Tracking.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/tracking/Tracking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/utils/Converters.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/utils/Converters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/video/BackgroundSubtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/video/BackgroundSubtractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/video/BackgroundSubtractorKNN.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/video/BackgroundSubtractorKNN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/video/BackgroundSubtractorMOG2.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/video/BackgroundSubtractorMOG2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/video/DenseOpticalFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/video/DenseOpticalFlow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/video/DualTVL1OpticalFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/video/DualTVL1OpticalFlow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/video/FarnebackOpticalFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/video/FarnebackOpticalFlow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/video/KalmanFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/video/KalmanFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/video/SparseOpticalFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/video/SparseOpticalFlow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/video/SparsePyrLKOpticalFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/video/SparsePyrLKOpticalFlow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/video/Video.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/video/Video.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/videoio/VideoCapture.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/videoio/VideoCapture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/videoio/VideoWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/videoio/VideoWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/videoio/Videoio.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/videoio/Videoio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xfeatures2d/BoostDesc.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xfeatures2d/BoostDesc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xfeatures2d/BriefDescriptorExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xfeatures2d/BriefDescriptorExtractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xfeatures2d/DAISY.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xfeatures2d/DAISY.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xfeatures2d/FREAK.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xfeatures2d/FREAK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xfeatures2d/HarrisLaplaceFeatureDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xfeatures2d/HarrisLaplaceFeatureDetector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xfeatures2d/LATCH.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xfeatures2d/LATCH.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xfeatures2d/LUCID.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xfeatures2d/LUCID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xfeatures2d/MSDDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xfeatures2d/MSDDetector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xfeatures2d/PCTSignatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xfeatures2d/PCTSignatures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xfeatures2d/PCTSignaturesSQFD.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xfeatures2d/PCTSignaturesSQFD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xfeatures2d/SIFT.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xfeatures2d/SIFT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xfeatures2d/SURF.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xfeatures2d/SURF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xfeatures2d/StarDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xfeatures2d/StarDetector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xfeatures2d/VGG.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xfeatures2d/VGG.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xfeatures2d/Xfeatures2d.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xfeatures2d/Xfeatures2d.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/AdaptiveManifoldFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/AdaptiveManifoldFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/ContourFitting.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/ContourFitting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/DTFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/DTFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/DisparityFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/DisparityFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/DisparityWLSFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/DisparityWLSFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/EdgeAwareInterpolator.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/EdgeAwareInterpolator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/EdgeBoxes.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/EdgeBoxes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/FastGlobalSmootherFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/FastGlobalSmootherFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/FastLineDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/FastLineDetector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/GraphSegmentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/GraphSegmentation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/GuidedFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/GuidedFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/RFFeatureGetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/RFFeatureGetter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/RidgeDetectionFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/RidgeDetectionFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/SelectiveSearchSegmentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/SelectiveSearchSegmentation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/SelectiveSearchSegmentationStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/SelectiveSearchSegmentationStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/SelectiveSearchSegmentationStrategyColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/SelectiveSearchSegmentationStrategyColor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/SelectiveSearchSegmentationStrategyFill.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/SelectiveSearchSegmentationStrategyFill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/SelectiveSearchSegmentationStrategyMultiple.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/SelectiveSearchSegmentationStrategyMultiple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/SelectiveSearchSegmentationStrategySize.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/SelectiveSearchSegmentationStrategySize.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/SelectiveSearchSegmentationStrategyTexture.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/SelectiveSearchSegmentationStrategyTexture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/SparseMatchInterpolator.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/SparseMatchInterpolator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/StructuredEdgeDetection.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/StructuredEdgeDetection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/SuperpixelLSC.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/SuperpixelLSC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/SuperpixelSEEDS.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/SuperpixelSEEDS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/SuperpixelSLIC.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/SuperpixelSLIC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/Ximgproc.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/ximgproc/Ximgproc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xphoto/GrayworldWB.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xphoto/GrayworldWB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xphoto/LearningBasedWB.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xphoto/LearningBasedWB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xphoto/SimpleWB.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xphoto/SimpleWB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xphoto/WhiteBalancer.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xphoto/WhiteBalancer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xphoto/Xphoto.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xphoto/Xphoto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary340dev/src/main/res/values/attrs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary340dev/src/main/res/values/attrs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/main'.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/cpp/main'.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/main'.h" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/cpp/main'.h" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -277,7 +30,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="cpp" value="3" />
-          <entry key="gradle" value="2" />
+          <entry key="gradle" value="4" />
           <entry key="h" value="1" />
           <entry key="java" value="2" />
           <entry key="txt" value="1" />
@@ -286,7 +39,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Groovy" value="2" />
+          <entry key="Groovy" value="4" />
           <entry key="JAVA" value="2" />
           <entry key="ObjectiveC" value="4" />
           <entry key="PLAIN_TEXT" value="1" />
@@ -317,6 +70,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/openCVLibrary340dev/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
@@ -335,7 +97,7 @@
           <provider editor-type-id="android-manifest" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/jcdr23/com/dev3d/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -348,15 +110,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cpp/main'.cpp">
+        <entry file="file://$PROJECT_DIR$/app/src/main/cpp/main'.cpp">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cpp/main'.h">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/cpp/main'.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -364,8 +126,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
+            <state relative-caret-position="255">
               <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/settings.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -430,6 +201,14 @@
               <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="cpp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dev3D" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dev3D" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -465,11 +244,6 @@
             <path>
               <item name="Dev3D" type="b2602c69:ProjectViewProjectNode" />
               <item name="Dev3D" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cpp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dev3D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dev3D" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="openCVLibrary340dev" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -485,6 +259,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Dev3D" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dev3D" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="openCVLibrary340dev" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="jniLibs" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -496,6 +278,68 @@
             <path>
               <item name="Dev3D" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="Dev3D" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
+            </path>
+            <path>
+              <item name="Dev3D" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="Dev3D" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="jcdr23" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dev3D" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="jcdr23" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dev3D" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="jcdr23" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="dev3d" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dev3D" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="generatedJava" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="Dev3D" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="generatedJava" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="jcdr23" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dev3D" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="generatedJava" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="jcdr23" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dev3D" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="generatedJava" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="jcdr23" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="dev3d" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dev3D" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
             </path>
           </expand>
           <select />
@@ -509,6 +353,11 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../opencv3-android-sdk-with-contrib/OpenCV-android-sdk/sdk/java" />
     <property name="settings.editor.selected.configurable" value="gradle.compiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Github\3DGen\Dev3D\app\src\main" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -598,7 +447,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.32995737" />
       <window_info id="Structure" side_tool="true" />
@@ -637,13 +485,6 @@
     <entry file="file://$PROJECT_DIR$/import-summary.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/openCVLibrary340dev/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -655,6 +496,13 @@
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="40" lean-forward="true" selection-end-line="25" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/openCVLibrary340dev/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -662,10 +510,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/main.cpp">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="40" lean-forward="true" selection-end-line="25" selection-end-column="2" />
+        <state relative-caret-position="238">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/cpp/main'.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/cpp/main'.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -676,16 +548,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/main'.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/main'.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
