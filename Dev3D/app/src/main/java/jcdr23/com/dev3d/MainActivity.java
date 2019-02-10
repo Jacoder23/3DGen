@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import java.lang.String;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.lang.Exception;
 import android.os.Bundle;
 import android.widget.Button;
 import android.view.View;
@@ -99,7 +100,11 @@ public class MainActivity extends AppCompatActivity {
                         if(files.length >= 2){
                             Log.i("fricatta", "Alfred");
                             TextView log = findViewById(R.id.txt_log);
-                            log.setText( stringFromJNI() );
+                            try {
+                                log.setText(stringFromJNI());
+                            } catch (Exception e){
+                                log.setText("An error has occurred");
+                            }
                             Log.i("fricatta", files.toString());
                             Timer timer = new Timer();
                             TimerTask t = new TimerTask() {
