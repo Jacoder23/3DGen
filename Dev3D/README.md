@@ -15,5 +15,5 @@ This app makes use of several dependencies. They have been included below along 
 
  - [OpenMVS](https://github.com/cdcseacave/openMVS) - [LICENSE](https://raw.githubusercontent.com/cdcseacave/openMVS/master/LICENSE)
  - [OpenCV](https://opencv.org/) - [LICENSE](https://opencv.org/license.html)
- - [OpenCV3-Android-SDK-with-contrib](https://github.com/chaoyangnz/opencv3-android-sdk-with-contrib/blob/master/OpenCV-android-sdk/LICENSE)
+ - [OpenCV3-Android-SDK-with-contrib](https://github.com/chaoyangnz/opencv3-android-sdk-with-contrib) - [LICENSE](https://github.com/chaoyangnz/opencv3-android-sdk-with-contrib/blob/master/OpenCV-android-sdk/LICENSE)
  - [Android Filepicker](https://github.com/Angads25/android-filepicker) - [LICENSE](https://github.com/Angads25/android-filepicker/blob/release/LICENSE)
