@@ -106,33 +106,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onSelectedFilePaths(String[] files) {
                         //files is the array of the paths of files selected by the Application User.
                         if(files.length >= 2){
-                            Log.i("fricatta", "Alfred");
-                            TextView log = findViewById(R.id.txt_log);
-                            try {
-                                log.setText("Setup is successful. Continuing.");
-                                Timer timer = new Timer();
-                                TimerTask t = new TimerTask() {
-                                    double i = 0;
-                                    TextView log = findViewById(R.id.txt_log);
-                                    @Override
-                                    public void run() {
-                                        i++;
-                                    }
-                                };
-                                timer.scheduleAtFixedRate(t,1,1);
-                                for(int i = 0; i < files.length; i++) {
-                                    Mat img = Imgcodecs.imread(files[0]);
-                                    MatOfKeyPoint keypoints = new MatOfKeyPoint();
-                                    ORB orb = ORB.create();
-                                    orb.detect(img, keypoints);
-                                    Mat des = new Mat();
-                                    orb.compute(img, keypoints, des);
-                                    Log.i("fricatta", Double.toString((des.size().width)*(des.size().height)) + " | Time expended (seconds): " + Double.toString(i/1000));
-                                    log.setText(Double.toString((des.size().width)*(des.size().height)) + " | Time expended (seconds): " + Double.toString(i/1000));
-                                }
-                            } catch (Exception e){
-                                log.setText("An error has occurred");
-                            }
+                            SFM(files);
                         } else {
                             Toast.makeText(MainActivity.this,"Please select at least two images.",Toast.LENGTH_SHORT).show();
                         }
@@ -156,6 +130,36 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this,"We need permission to access your dataset.",Toast.LENGTH_SHORT).show();
                 }
             }
+        }
+    }
+
+    public void SFM(String[] files){
+        Log.i("fricatta", "Alfred");
+        TextView log = findViewById(R.id.txt_log);
+        try {
+            log.setText("Setup is successful. Continuing.");
+            Timer timer = new Timer();
+            TimerTask t = new TimerTask() {
+                double i = 0;
+                TextView log = findViewById(R.id.txt_log);
+                @Override
+                public void run() {
+                    i++;
+                }
+            };
+            timer.scheduleAtFixedRate(t,1,1);
+            for(int i = 0; i < files.length; i++) {
+                Mat img = Imgcodecs.imread(files[0]);
+                MatOfKeyPoint keypoints = new MatOfKeyPoint();
+                ORB orb = ORB.create();
+                orb.detect(img, keypoints);
+                Mat des = new Mat();
+                orb.compute(img, keypoints, des);
+                Log.i("fricatta", Double.toString((des.size().width)*(des.size().height)) + " | Time expended (seconds): " + Double.toString(i/1000));
+                log.setText(Double.toString((des.size().width)*(des.size().height)) + " | Time expended (seconds): " + Double.toString(i/1000));
+            }
+        } catch (Exception e){
+            log.setText("An error has occurred");
         }
     }
 

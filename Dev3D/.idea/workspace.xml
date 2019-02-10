@@ -7,10 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d51f532-8418-441d-b172-026e6458f2ef" name="Default Changelist" comment="continued attempts to fix this mess">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/jcdr23/com/dev3d/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/jcdr23/com/dev3d/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +58,7 @@
         <counts>
           <entry key="c" value="108" />
           <entry key="gradle" value="19" />
-          <entry key="java" value="621" />
+          <entry key="java" value="674" />
           <entry key="txt" value="81" />
           <entry key="xml" value="28" />
         </counts>
@@ -69,7 +67,7 @@
         <counts>
           <entry key="CMakeLists.txt" value="43" />
           <entry key="Groovy" value="19" />
-          <entry key="JAVA" value="621" />
+          <entry key="JAVA" value="674" />
           <entry key="ObjectiveC" value="108" />
           <entry key="PLAIN_TEXT" value="38" />
           <entry key="XML" value="28" />
@@ -82,16 +80,16 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/jcdr23/com/dev3d/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="126" column="63" lean-forward="true" selection-start-line="126" selection-start-column="63" selection-end-line="126" selection-end-column="63" />
+            <state relative-caret-position="77">
+              <caret line="133" column="5" lean-forward="true" selection-start-line="133" selection-start-column="5" selection-end-line="133" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3098#6158#0" expanded="true" />
-                <element signature="e#3849#6037#0" expanded="true" />
-                <element signature="e#4724#4725#0" expanded="true" />
-                <element signature="e#4807#4808#0" expanded="true" />
-                <element signature="e#6036#6037#0" expanded="true" />
-                <element signature="e#6157#6158#0" expanded="true" />
+                <element signature="e#3098#4503#0" expanded="true" />
+                <element signature="e#3849#4382#0" expanded="true" />
+                <element signature="e#4381#4382#0" expanded="true" />
+                <element signature="e#4502#4503#0" expanded="true" />
+                <element signature="e#5888#5889#0" expanded="true" />
+                <element signature="e#5971#5972#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -501,7 +499,7 @@
       <window_info anchor="bottom" id="Debug" weight="0.329718" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Build" visible="true" weight="0.329718" />
+      <window_info active="true" anchor="bottom" id="Build" visible="true" weight="0.329718" />
       <window_info anchor="bottom" id="Find" weight="0.329718" />
       <window_info anchor="bottom" id="Messages" weight="0.329718" />
       <window_info anchor="right" id="Device File Explorer" side_tool="true" />
@@ -633,16 +631,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/jcdr23/com/dev3d/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="126" column="63" lean-forward="true" selection-start-line="126" selection-start-column="63" selection-end-line="126" selection-end-column="63" />
+        <state relative-caret-position="77">
+          <caret line="133" column="5" lean-forward="true" selection-start-line="133" selection-start-column="5" selection-end-line="133" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3098#6158#0" expanded="true" />
-            <element signature="e#3849#6037#0" expanded="true" />
-            <element signature="e#4724#4725#0" expanded="true" />
-            <element signature="e#4807#4808#0" expanded="true" />
-            <element signature="e#6036#6037#0" expanded="true" />
-            <element signature="e#6157#6158#0" expanded="true" />
+            <element signature="e#3098#4503#0" expanded="true" />
+            <element signature="e#3849#4382#0" expanded="true" />
+            <element signature="e#4381#4382#0" expanded="true" />
+            <element signature="e#4502#4503#0" expanded="true" />
+            <element signature="e#5888#5889#0" expanded="true" />
+            <element signature="e#5971#5972#0" expanded="true" />
           </folding>
         </state>
       </provider>
