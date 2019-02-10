@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onSelectedFilePaths(String[] files) {
                         //files is the array of the paths of files selected by the Application User.
                         if(files.length >= 2){
-                            SFM(files);
+                            kpDetect(files);
                         } else {
                             Toast.makeText(MainActivity.this,"Please select at least two images.",Toast.LENGTH_SHORT).show();
                         }
@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void SFM(String[] files){
+    public Mat[] kpDetect(String[] files){
         Log.i("fricatta", "Alfred");
         TextView log = findViewById(R.id.txt_log);
         try {
@@ -148,18 +148,22 @@ public class MainActivity extends AppCompatActivity {
                 }
             };
             timer.scheduleAtFixedRate(t,1,1);
+            String userLog = "";
+            MatOfKeyPoint[] keypoints = {};
+            Mat[] des = {};
+            ORB orb = ORB.create();
             for(int i = 0; i < files.length; i++) {
-                Mat img = Imgcodecs.imread(files[0]);
-                MatOfKeyPoint keypoints = new MatOfKeyPoint();
-                ORB orb = ORB.create();
-                orb.detect(img, keypoints);
-                Mat des = new Mat();
-                orb.compute(img, keypoints, des);
-                Log.i("fricatta", Double.toString((des.size().width)*(des.size().height)) + " | Time expended (seconds): " + Double.toString(i/1000));
-                log.setText(Double.toString((des.size().width)*(des.size().height)) + " | Time expended (seconds): " + Double.toString(i/1000));
+                Mat img = Imgcodecs.imread(files[i]);
+                orb.detect(img, keypoints[i]);
+                orb.compute(img, keypoints[i], des[i]);
+                Log.i("fricatta", Double.toString((des[i].size().width)*(des[i].size().height)) + " | Time expended (seconds): " + Double.toString(i/1000));
+                userLog += Double.toString((des[i].size().width)*(des[i].size().height)) + " | Time expended (seconds): " + Double.toString(i/1000);
             }
+            log.setText(userLog);
+            return des;
         } catch (Exception e){
             log.setText("An error has occurred");
+            return null;
         }
     }
 
@@ -167,6 +171,9 @@ public class MainActivity extends AppCompatActivity {
 
     static {
         System.loadLibrary("hello-jni");
+    }
+    public void run(String[] args) {
+
     }
 
 }
