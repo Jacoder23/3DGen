@@ -59,5 +59,6 @@ Java_com_example_hellojni_HelloJni_stringFromJNI( JNIEnv* env,
 #define ABI "unknown"
 #endif
 
-    return (*env)->NewStringUTF(env, "Hello from JNI !  Compiled with ABI " ABI ".");
+    // return (*env)->NewStringUTF(env, "JNI is working properly. Continuing...");
+    return "JNI is working properly. Continuing...";
 }
