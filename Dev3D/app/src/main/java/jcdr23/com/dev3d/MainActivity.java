@@ -116,7 +116,6 @@ public class MainActivity extends AppCompatActivity {
                                     TextView log = findViewById(R.id.txt_log);
                                     @Override
                                     public void run() {
-                                        log.setText("Time expended (seconds): " + Double.toString(i/1000));
                                         i++;
                                     }
                                 };
@@ -128,7 +127,8 @@ public class MainActivity extends AppCompatActivity {
                                     orb.detect(img, keypoints);
                                     Mat des = new Mat();
                                     orb.compute(img, keypoints, des);
-                                    Log.i("fricatta", des.toString());
+                                    Log.i("fricatta", Double.toString((des.size().width)*(des.size().height)) + " | Time expended (seconds): " + Double.toString(i/1000));
+                                    log.setText(Double.toString((des.size().width)*(des.size().height)) + " | Time expended (seconds): " + Double.toString(i/1000));
                                 }
                             } catch (Exception e){
                                 log.setText("An error has occurred");
