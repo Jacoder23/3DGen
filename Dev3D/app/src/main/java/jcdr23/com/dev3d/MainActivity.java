@@ -127,9 +127,11 @@ public class MainActivity extends AppCompatActivity {
                             } catch (InterruptedException e){
                                 // TODO: Error Code: 001
                                 Toast.makeText(MainActivity.this,"Error Code: 001",Toast.LENGTH_SHORT).show();
+                                Log.e("fricatta", "Error Code: 001");
                             } catch (ExecutionException e){
                                 // TODO: Error Code: 002
                                 Toast.makeText(MainActivity.this,"Error Code: 002",Toast.LENGTH_SHORT).show();
+                                Log.e("fricatta", "Error Code: 002");
                             }
                         } else {
                             Toast.makeText(MainActivity.this,"Please select at least two images.",Toast.LENGTH_SHORT).show();
