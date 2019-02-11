@@ -119,7 +119,6 @@ public class MainActivity extends AppCompatActivity {
                                 public void run() {
                                     time++;
                                     Log.i("fricatta", Double.toString(time / 1000));
-                                    log.setText(Double.toString(time / 1000));
                                 }
                             };
                             timer.scheduleAtFixedRate(t, 1, 1);
@@ -165,8 +164,8 @@ public class MainActivity extends AppCompatActivity {
 
     public Mat[] kpDetect(String[] files) {
         Mat[] result = new Mat[0];
-        for (int i = 0; i <= files.length; i++) {
-            result = new Mat[1];
+        for (int i = 0; i < files.length; i++) {
+            result = new Mat[500];
             Log.i("fricatta", "Alfred");
             TextView log = findViewById(R.id.txt_log);
             //try {
@@ -174,7 +173,7 @@ public class MainActivity extends AppCompatActivity {
             String userLog = "";
             MatOfKeyPoint keypoints = new MatOfKeyPoint();
             Mat des = new Mat();
-            ORB orb = ORB.create();
+            ORB orb = ORB.create(100000, 1.3f);
             //for(int i = 0; i < files.length; i++) {
             Mat img = Imgcodecs.imread(files[i]);
             orb.detect(img, keypoints);
