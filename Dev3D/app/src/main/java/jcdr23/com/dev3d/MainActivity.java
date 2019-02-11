@@ -24,6 +24,11 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 import java.io.File;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
+import java.util.function.Supplier;
+import java.util.concurrent.CompletableFuture.AsynchronousCompletionTask;
+
 import android.util.Log;
 import android.hardware.Camera;
 import android.app.Activity;
@@ -106,7 +111,26 @@ public class MainActivity extends AppCompatActivity {
                     public void onSelectedFilePaths(String[] files) {
                         //files is the array of the paths of files selected by the Application User.
                         if(files.length >= 2){
-                            kpDetect(files);
+                            double time = 0;
+                            Timer timer = new Timer();
+                            TimerTask t = new TimerTask() {
+                                double time = 0;
+                                public void run() {
+                                    time++;
+                                    Log.i("fricatta", Double.toString(time / 1000));
+                                }
+                            };
+                            timer.scheduleAtFixedRate(t, 1, 1);
+                            CompletableFuture CFkpDetect = CompletableFuture.supplyAsync(() -> "Hello");
+                            try {
+                                CFkpDetect.get();
+                            } catch (InterruptedException e){
+                                // TODO: Error Code: 001
+                                Toast.makeText(MainActivity.this,"Error Code: 001",Toast.LENGTH_SHORT).show();
+                            } catch (ExecutionException e){
+                                // TODO: Error Code: 002
+                                Toast.makeText(MainActivity.this,"Error Code: 002",Toast.LENGTH_SHORT).show();
+                            }
                         } else {
                             Toast.makeText(MainActivity.this,"Please select at least two images.",Toast.LENGTH_SHORT).show();
                         }
@@ -133,38 +157,28 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public Mat[] kpDetect(String[] files){
+    public Mat kpDetect(String[] files) {
         Log.i("fricatta", "Alfred");
         TextView log = findViewById(R.id.txt_log);
-        try {
-            log.setText("Setup is successful. Continuing.");
-            Timer timer = new Timer();
-            TimerTask t = new TimerTask() {
-                double i = 0;
-                TextView log = findViewById(R.id.txt_log);
-                @Override
-                public void run() {
-                    i++;
-                }
-            };
-            timer.scheduleAtFixedRate(t,1,1);
-            String userLog = "";
-            MatOfKeyPoint[] keypoints = {};
-            Mat[] des = {};
-            ORB orb = ORB.create();
-            for(int i = 0; i < files.length; i++) {
-                Mat img = Imgcodecs.imread(files[i]);
-                orb.detect(img, keypoints[i]);
-                orb.compute(img, keypoints[i], des[i]);
-                Log.i("fricatta", Double.toString((des[i].size().width)*(des[i].size().height)) + " | Time expended (seconds): " + Double.toString(i/1000));
-                userLog += Double.toString((des[i].size().width)*(des[i].size().height)) + " | Time expended (seconds): " + Double.toString(i/1000);
-            }
-            log.setText(userLog);
-            return des;
-        } catch (Exception e){
-            log.setText("An error has occurred");
-            return null;
-        }
+        //try {
+        log.setText("Setup is successful. Continuing.");
+        String userLog = "";
+        MatOfKeyPoint keypoints = new MatOfKeyPoint();
+        Mat des = new Mat();
+        ORB orb = ORB.create();
+        //for(int i = 0; i < files.length; i++) {
+        Mat img = Imgcodecs.imread(files[0]);
+        orb.detect(img, keypoints);
+        orb.compute(img, keypoints, des);
+        Log.i("fricatta", Double.toString((des.size().width) * (des.size().height)));
+        userLog += Double.toString((des.size().width) * (des.size().height));
+        //}
+        log.setText(userLog);
+        return des;
+        //} catch (Exception e){
+        //    log.setText("An error has occurred");
+        //    return null;
+        //}
     }
 
     public native String stringFromJNI();
