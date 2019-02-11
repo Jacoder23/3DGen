@@ -173,15 +173,17 @@ public class MainActivity extends AppCompatActivity {
             String userLog = "";
             MatOfKeyPoint keypoints = new MatOfKeyPoint();
             Mat des = new Mat();
-            ORB orb = ORB.create(100000, 1.3f);
+            ORB orb = ORB.create(150000, 1.4f, 8, 20, 0, 3);
             //for(int i = 0; i < files.length; i++) {
             Mat img = Imgcodecs.imread(files[i]);
+            /*Size size = new Size(img.width()*1, img.height()*1);
+            Imgproc.resize(img, img, size);*/
             orb.detect(img, keypoints);
             orb.compute(img, keypoints, des);
             Log.i("fricatta", Double.toString((des.size().width) * (des.size().height)));
-            userLog += Double.toString((des.size().width) * (des.size().height));
+            // userLog += Double.toString((des.size().width)) + " | " + Double.toString(des.size().height);
             //}
-            log.setText(userLog);
+            // log.setText(userLog);
             Log.i("gonzaga", des.toString());
             result[i] = des;
         }
