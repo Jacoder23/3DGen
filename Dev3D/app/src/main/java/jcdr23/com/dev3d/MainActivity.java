@@ -113,11 +113,13 @@ public class MainActivity extends AppCompatActivity {
                         if(files.length >= 2){
                             double time = 0;
                             Timer timer = new Timer();
+                            TextView log = findViewById(R.id.txt_log);
                             TimerTask t = new TimerTask() {
                                 double time = 0;
                                 public void run() {
                                     time++;
                                     Log.i("fricatta", Double.toString(time / 1000));
+                                    log.setText(Double.toString(time / 1000));
                                 }
                             };
                             timer.scheduleAtFixedRate(t, 1, 1);
@@ -128,10 +130,12 @@ public class MainActivity extends AppCompatActivity {
                                 // TODO: Error Code: 001
                                 Toast.makeText(MainActivity.this,"Error Code: 001",Toast.LENGTH_SHORT).show();
                                 Log.e("fricatta", "Error Code: 001");
+                                while(true){ log.setText("Errpr Code 001"); }
                             } catch (ExecutionException e){
                                 // TODO: Error Code: 002
                                 Toast.makeText(MainActivity.this,"Error Code: 002",Toast.LENGTH_SHORT).show();
                                 Log.e("fricatta", "Error Code: 002");
+                                while(true){ log.setText("Errpr Code 002"); }
                             }
                         } else {
                             Toast.makeText(MainActivity.this,"Please select at least two images.",Toast.LENGTH_SHORT).show();
