@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
                                 }
                             };
                             timer.scheduleAtFixedRate(t, 1, 1);
-                            CompletableFuture CFkpDetect = CompletableFuture.supplyAsync(() -> "Hello");
+                            CompletableFuture CFkpDetect = CompletableFuture.supplyAsync(() -> kpDetect(files));
                             try {
                                 CFkpDetect.get();
                             } catch (InterruptedException e){
@@ -180,6 +180,7 @@ public class MainActivity extends AppCompatActivity {
         userLog += Double.toString((des.size().width) * (des.size().height));
         //}
         log.setText(userLog);
+        Log.i("gonzaga", des.toString());
         return des;
         //} catch (Exception e){
         //    log.setText("An error has occurred");
