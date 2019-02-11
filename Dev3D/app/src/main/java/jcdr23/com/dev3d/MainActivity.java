@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
                             timer.scheduleAtFixedRate(t, 1, 1);
                             CompletableFuture CFkpDetect = CompletableFuture.supplyAsync(() -> kpDetect(files));
                             try {
-                                CFkpDetect.get();
+                                Log.i("gonzaga", CFkpDetect.get().toString());
                             } catch (InterruptedException e){
                                 // TODO: Error Code: 001
                                 Toast.makeText(MainActivity.this,"Error Code: 001",Toast.LENGTH_SHORT).show();
@@ -163,25 +163,31 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public Mat kpDetect(String[] files) {
-        Log.i("fricatta", "Alfred");
-        TextView log = findViewById(R.id.txt_log);
-        //try {
-        log.setText("Setup is successful. Continuing.");
-        String userLog = "";
-        MatOfKeyPoint keypoints = new MatOfKeyPoint();
-        Mat des = new Mat();
-        ORB orb = ORB.create();
-        //for(int i = 0; i < files.length; i++) {
-        Mat img = Imgcodecs.imread(files[0]);
-        orb.detect(img, keypoints);
-        orb.compute(img, keypoints, des);
-        Log.i("fricatta", Double.toString((des.size().width) * (des.size().height)));
-        userLog += Double.toString((des.size().width) * (des.size().height));
-        //}
-        log.setText(userLog);
-        Log.i("gonzaga", des.toString());
-        return des;
+    public Mat[] kpDetect(String[] files) {
+        Mat[] result = new Mat[0];
+        for (int i = 0; i <= files.length; i++) {
+            result = new Mat[1];
+            Log.i("fricatta", "Alfred");
+            TextView log = findViewById(R.id.txt_log);
+            //try {
+            log.setText("Setup is successful. Continuing.");
+            String userLog = "";
+            MatOfKeyPoint keypoints = new MatOfKeyPoint();
+            Mat des = new Mat();
+            ORB orb = ORB.create();
+            //for(int i = 0; i < files.length; i++) {
+            Mat img = Imgcodecs.imread(files[i]);
+            orb.detect(img, keypoints);
+            orb.compute(img, keypoints, des);
+            Log.i("fricatta", Double.toString((des.size().width) * (des.size().height)));
+            userLog += Double.toString((des.size().width) * (des.size().height));
+            //}
+            log.setText(userLog);
+            Log.i("gonzaga", des.toString());
+            result[i] = des;
+        }
+
+        return result;
         //} catch (Exception e){
         //    log.setText("An error has occurred");
         //    return null;
