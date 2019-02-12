@@ -241,7 +241,7 @@ public class DescriptorMatcher extends Algorithm {
     }
 
     //javadoc: DescriptorMatcher::match(queryDescriptors, matches)
-    public  void match(Mat queryDescriptors, MatOfDMatch matches)
+    public void match(Mat queryDescriptors, MatOfDMatch matches)
     {
         Mat matches_mat = matches;
         match_3(nativeObj, queryDescriptors.nativeObj, matches_mat.nativeObj);

@@ -2,15 +2,24 @@
 
 package jcdr23.com.dev3d;
 
+import org.opencv.features2d.BFMatcher;
+import org.opencv.features2d.Params;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import java.lang.String;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.ListIterator;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.stream.*;
+import android.support.annotation.Nullable;
+import android.support.annotation.NonNull;
 import java.lang.Exception;
 import android.os.Bundle;
 import android.widget.Button;
 import android.view.View;
+import 	java.util.Arrays;
 import android.util.Pair;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -57,6 +66,9 @@ import org.opencv.android.CameraBridgeViewBase;
 import org.opencv.android.CameraBridgeViewBase.CvCameraViewListener2;
 import org.opencv.features2d.DescriptorExtractor;
 import org.opencv.features2d.DescriptorMatcher;
+import org.opencv.features2d.FastFeatureDetector;
+import org.opencv.features2d.FlannBasedMatcher;
+import org.opencv.xfeatures2d.SURF;
 import org.opencv.imgproc.Imgproc;
 import org.opencv.core.Rect;
 import org.opencv.imgcodecs.Imgcodecs;
@@ -129,9 +141,10 @@ public class MainActivity extends AppCompatActivity {
                             };
                             timer.scheduleAtFixedRate(t, 1, 1);
 
-                            MatOfDMatch[] FLANNMATCHResult = FLANNMATCH(kpDetect(files));
+                            //MatOfDMatch[] FLANNMATCHResult =
+                                    kpDetect(files);
 
-                            Log.i("gonzaga", ((MatOfDMatch) FLANNMATCHResult[0]).toString());
+                            // Log.i("gonzaga", (FLANNMATCHResult).toString());
 
                             /*CompletableFuture CFkpDetect = CompletableFuture.supplyAsync(() -> kpDetect(files));
                             try {
@@ -173,7 +186,58 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public Object[] kpDetect(String[] files) {
+    public MatOfDMatch[] newPC(String[] files){
+        MatOfDMatch[] results = new MatOfDMatch[500];
+        for (int i = 0; i < files.length; i++) {
+            Mat img1 = Imgcodecs.imread(files[i], Imgcodecs.CV_LOAD_IMAGE_GRAYSCALE);
+            Mat img2 = Imgcodecs.imread(files[i+1], Imgcodecs.CV_LOAD_IMAGE_GRAYSCALE);
+            Size size1 = new Size(img1.width()*0.5, img1.height()*0.5);
+            Imgproc.resize(img1, img1, size1);
+            Size size2 = new Size(img2.width()*0.5, img2.height()*0.5);
+            Imgproc.resize(img2, img2, size2);
+            FastFeatureDetector detector = FastFeatureDetector.create();
+            DescriptorExtractor descriptor = DescriptorExtractor.create(DescriptorExtractor.ORB);
+            DescriptorMatcher matcher = DescriptorMatcher.create(DescriptorMatcher.BRUTEFORCE_HAMMING);
+
+// DETECTION
+// first image
+            Mat descriptors1 = new Mat();
+            MatOfKeyPoint keypoints1 = new MatOfKeyPoint();
+
+            detector.detect(img1, keypoints1);
+            descriptor.compute(img1, keypoints1, descriptors1);
+
+// second image
+            Mat descriptors2 = new Mat();
+            MatOfKeyPoint keypoints2 = new MatOfKeyPoint();
+
+            detector.detect(img2, keypoints2);
+            descriptor.compute(img2, keypoints2, descriptors2);
+
+// MATCHING
+// match these two keypoints sets
+            List<MatOfDMatch> matches = new ArrayList<MatOfDMatch>();
+            /*//-- Filter matches using the Lowe's ratio test
+            float ratioThresh = 0.7f;
+            List<DMatch> listOfGoodMatches = new ArrayList<>();
+            for (int j = 0; j < knnMatches.size(); i++) {
+                if (knnMatches.get(j).rows() > 1) {
+                    DMatch[] matches = knnMatches.get(j).toArray();
+                    if (matches[0].distance < ratioThresh * matches[1].distance) {
+                        listOfGoodMatches.add(matches[0]);
+                    }
+                }
+            }
+            MatOfDMatch goodMatches = new MatOfDMatch();
+            goodMatches.fromList(listOfGoodMatches);
+
+            results[i] = goodMatches;*/
+        }
+        return results;
+
+    }
+
+    public List<MatOfDMatch> kpDetect(String[] files) {
         Mat[] desResult = new Mat[999];
         MatOfKeyPoint[] kpResult = new MatOfKeyPoint[999];
         for (int i = 0; i < files.length; i++) {
@@ -200,29 +264,53 @@ public class MainActivity extends AppCompatActivity {
             kpResult[i] = keypoints;
         }
 
-        Object[] results = new Object[2];
-        results[0] = desResult;
-        results[1] = kpResult;
+        /*for (int k = 0; k < desResult.length; k++) {
+            if(desResult[0].type() != CvType.CV_32F) {
+                desResult[0].convertTo(desResult[0], CvType.CV_32F);
+            }
+        }*/
 
-        return results;
+        DescriptorMatcher matcher = DescriptorMatcher.create(DescriptorMatcher.BRUTEFORCE);
+        Log.i("gonzaga", desResult[0].toString());
+        Log.i("gonzaga", desResult[1].toString());
+        MatOfDMatch[] array = new MatOfDMatch[999];
+        List<MatOfDMatch> matches = Arrays.asList(array);
+        MatOfDMatch filteredMatches = new MatOfDMatch();
+        for (int q = 0; q < desResult.length; q++) {
+            Log.i("gonzaga","---");
+            Log.i("gonzaga",desResult[q]);
+            Log.i("gonzaga",desResult[q+1]);
+            Log.i("gonzaga","---");
+            matcher.match(desResult[q], desResult[q+1], matches.get(q));
+        }
+        return matches;
         //} catch (Exception e){
         //    log.setText("An error has occurred");
         //    return null;
         //}
     }
-        public MatOfDMatch[] FLANNMATCH(Object[] h) {
+        public List<MatOfDMatch> FLANNMATCH(Object[] h) {
             // @Nullable
             TextView log = findViewById(R.id.txt_log);
             MatOfDMatch[] allGoodMatches = new MatOfDMatch[999];
             Mat[] des = Mat[].class.cast(h[0]);
             MatOfKeyPoint[] kp = MatOfKeyPoint[].class.cast(h[1]);
-            try {
+            for (int k = 0; k < des.length; k++) {
+                if(des[0].type() != CvType.CV_32F) {
+                    des[0].convertTo(des[0], CvType.CV_32F);
+                }
+            }
+            Mat descriptors1 = new Mat();
+            Mat descriptors2 = new Mat();
+            /*//try {
                 for (int j = 0; j < des.length; j++) {
                     //-- Step 2: Matching descriptor vectors with a FLANN based matcher
                     // Since SURF is a floating-point descriptor NORM_L2 is used
+                    */
                     DescriptorMatcher matcher = DescriptorMatcher.create(DescriptorMatcher.FLANNBASED);
                     List<MatOfDMatch> knnMatches = new ArrayList<>();
-                    matcher.knnMatch(des[0], kp[0], knnMatches, 2);
+                    matcher.knnMatch(des[0], des[1], knnMatches, 5);
+                    /*
                     //-- Filter matches using the Lowe's ratio test
                     float ratioThresh = 0.7f;
                     List<DMatch> listOfGoodMatches = new ArrayList<>();
@@ -239,8 +327,9 @@ public class MainActivity extends AppCompatActivity {
                     Log.i("gonzaga", goodMatches.toString());
                     allGoodMatches[j] = goodMatches;
                 }
-                return allGoodMatches;
-            } catch (NullPointerException e){
+            //return allGoodMatches;*/
+            return null;
+            /*} catch (NullPointerException e){
                 // TODO: Error Code 003
                 Toast.makeText(MainActivity.this,"Error Code: 003",Toast.LENGTH_SHORT).show();
                 Log.e("fricatta", "Error Code: 003");
@@ -256,8 +345,15 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this,"Error Code: 004",Toast.LENGTH_SHORT).show();
                 Log.e("fricatta", "Error Code: 004");
                 e.printStackTrace();
+                Log.e("gonzaga", "args 0: " + h[0].toString());
+                Log.e("gonzaga", "args 1: " + h[1].toString());
+                Log.e("gonzaga", "kp length: " + Integer.toString(kp.length));
+                Log.e("gonzaga", "des length: " + Integer.toString(des.length));
+                Log.e("gonzaga", "kp 0: " + kp[0].toString());
+                Log.e("gonzaga", "des 0: " + des[0].toString());
+                Log.e("gonzaga", e.getClass().getCanonicalName());
                 return null;
-            }
+            }*/
         }
 
     public native String stringFromJNI();
