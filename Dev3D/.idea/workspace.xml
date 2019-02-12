@@ -47,7 +47,7 @@
           <entry key="cmake" value="1" />
           <entry key="cpp" value="4" />
           <entry key="gradle" value="3" />
-          <entry key="java" value="4" />
+          <entry key="java" value="7" />
           <entry key="txt" value="3" />
           <entry key="xml" value="2" />
         </counts>
@@ -57,7 +57,7 @@
           <entry key="CLASS" value="1" />
           <entry key="CMakeLists.txt" value="4" />
           <entry key="Groovy" value="3" />
-          <entry key="JAVA" value="4" />
+          <entry key="JAVA" value="7" />
           <entry key="ObjectiveC" value="5" />
           <entry key="XML" value="2" />
         </counts>
@@ -66,7 +66,7 @@
         <counts>
           <entry key="c" value="109" />
           <entry key="gradle" value="28" />
-          <entry key="java" value="5625" />
+          <entry key="java" value="6101" />
           <entry key="txt" value="81" />
           <entry key="xml" value="40" />
         </counts>
@@ -75,7 +75,7 @@
         <counts>
           <entry key="CMakeLists.txt" value="43" />
           <entry key="Groovy" value="28" />
-          <entry key="JAVA" value="5625" />
+          <entry key="JAVA" value="6101" />
           <entry key="ObjectiveC" value="109" />
           <entry key="PLAIN_TEXT" value="38" />
           <entry key="XML" value="40" />
@@ -85,19 +85,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/jcdr23/com/dev3d/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="148" column="28" selection-start-line="148" selection-start-column="28" selection-end-line="148" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#9052#9065#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/xfeatures2d/SURF.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -136,28 +123,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/jre/jre/lib/rt.jar!/java/util/TimerThread.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/features2d/Feature2D.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
               <caret line="101" selection-start-line="101" selection-end-line="101" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -177,8 +146,43 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/cpp/SFM/SfMToyLib/SfM.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="85">
               <caret line="44" selection-start-line="44" selection-end-line="45" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/jcdr23/com/dev3d/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="165" column="151" selection-start-line="165" selection-start-column="151" selection-end-line="165" selection-end-column="151" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#9584#9597#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/imgproc/Imgproc.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="3547" selection-start-line="3547" selection-end-line="3547" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/calib3d/Calib3d.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="22" selection-start-line="22" selection-end-line="1402" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#102774#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -193,6 +197,8 @@
       <find>log</find>
       <find>time</find>
       <find>knnmatch</find>
+      <find>setup</find>
+      <find>essential</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -260,60 +266,6 @@
             <path>
               <item name="Dev3D" type="b2602c69:ProjectViewProjectNode" />
               <item name="Dev3D" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="cpp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dev3D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dev3D" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="cpp" type="462c0819:PsiDirectoryNode" />
-              <item name="SFM" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dev3D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dev3D" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="cpp" type="462c0819:PsiDirectoryNode" />
-              <item name="SFM" type="462c0819:PsiDirectoryNode" />
-              <item name="cmake" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dev3D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dev3D" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="cpp" type="462c0819:PsiDirectoryNode" />
-              <item name="SFM" type="462c0819:PsiDirectoryNode" />
-              <item name="SfMToyLib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dev3D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dev3D" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dev3D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dev3D" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="values" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dev3D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dev3D" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="build" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -362,7 +314,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="jniLibs" type="462c0819:PsiDirectoryNode" />
-              <item name="arm64-v8a" type="462c0819:PsiDirectoryNode" />
+              <item name="x86" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -420,6 +372,11 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="device.picker.selection" value="59c8ce6c" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Github\3DGen\Dev3D\app\src\main" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -529,13 +486,13 @@
       <window_info id="Designer" order="6" />
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Run" order="0" sideWeight="0.49840087" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="1" sideWeight="0.88539445" visible="true" weight="0.329718" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="1" sideWeight="0.8848614" visible="true" weight="0.329718" />
       <window_info anchor="bottom" id="TODO" order="2" sideWeight="0.49946696" weight="0.329718" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.329718" />
       <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.4978678" weight="0.329718" />
-      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.114605546" side_tool="true" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.11513859" side_tool="true" visible="true" weight="0.329718" />
       <window_info anchor="bottom" id="Version Control" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.48773986" weight="0.329718" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.48720682" weight="0.329718" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.329718" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.329718" />
       <window_info anchor="bottom" id="Android Profiler" order="10" weight="0.329718" />
@@ -600,29 +557,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/cpp/SFM/SfMToyLib/SfM.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="44" selection-start-line="44" selection-end-line="45" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/cpp/help.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="19" />
           <folding>
             <element signature="e#119#2375#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/cpp/hello-jni.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="46" column="84" selection-start-line="46" selection-start-column="84" selection-end-line="46" selection-end-column="84" />
-          <folding>
-            <element signature="e#623#642#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -677,13 +617,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/cpp/hello-jni.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="46" column="84" selection-start-line="46" selection-start-column="84" selection-end-line="46" selection-end-column="84" />
+          <folding>
+            <element signature="e#623#642#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/cpp/SFM/SfMToyLib/SfM.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="44" selection-start-line="44" selection-end-line="45" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/calib3d/Calib3d.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="22" selection-start-line="22" selection-end-line="1402" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#102774#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openCVLibrary340dev/src/main/java/org/opencv/imgproc/Imgproc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="3547" selection-start-line="3547" selection-end-line="3547" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/jcdr23/com/dev3d/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="148" column="28" selection-start-line="148" selection-start-column="28" selection-end-line="148" selection-end-column="28" />
+        <state relative-caret-position="190">
+          <caret line="165" column="151" selection-start-line="165" selection-start-column="151" selection-end-line="165" selection-end-column="151" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#9052#9065#0" expanded="true" />
+            <element signature="e#9584#9597#0" expanded="true" />
           </folding>
         </state>
       </provider>
