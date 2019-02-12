@@ -214,10 +214,10 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < files.length; i++) {
             Mat img1 = Imgcodecs.imread(files[i], Imgcodecs.CV_LOAD_IMAGE_GRAYSCALE);
             Mat img2 = Imgcodecs.imread(files[i+1], Imgcodecs.CV_LOAD_IMAGE_GRAYSCALE);
-            Size size1 = new Size(img1.width()*0.5, img1.height()*0.5);
+            /*Size size1 = new Size(img1.width()*0.5, img1.height()*0.5);
             Imgproc.resize(img1, img1, size1);
             Size size2 = new Size(img2.width()*0.5, img2.height()*0.5);
-            Imgproc.resize(img2, img2, size2);
+            Imgproc.resize(img2, img2, size2);*/
             FastFeatureDetector detector = FastFeatureDetector.create();
             DescriptorExtractor descriptor = DescriptorExtractor.create(DescriptorExtractor.ORB);
             DescriptorMatcher matcher = DescriptorMatcher.create(DescriptorMatcher.BRUTEFORCE_HAMMING);
@@ -274,8 +274,8 @@ public class MainActivity extends AppCompatActivity {
             ORB orb = ORB.create(10000, 1.4f, 11, 29, 0, 2, 0, 29);
             //for(int i = 0; i < files.length; i++) {
             Mat img = Imgcodecs.imread(files[i]);
-            Size size = new Size(img.width()*0.5, img.height()*0.5);
-            Imgproc.resize(img, img, size);
+            /*Size size = new Size(img.width()*0.5, img.height()*0.5);
+            Imgproc.resize(img, img, size);*/
             orb.detect(img, keypoints);
             orb.compute(img, keypoints, des);
             Log.i("fricatta", Double.toString((des.size().width) * (des.size().height)));
@@ -411,6 +411,38 @@ public class MainActivity extends AppCompatActivity {
         System.loadLibrary("hello-jni");
         //System.loadLibrary("libopencv_calib3d");
     }
+
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+
 
     public static final int
             CALIB_USE_INTRINSIC_GUESS = 1,

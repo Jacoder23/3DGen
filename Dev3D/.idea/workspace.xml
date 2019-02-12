@@ -66,7 +66,7 @@
         <counts>
           <entry key="c" value="109" />
           <entry key="gradle" value="28" />
-          <entry key="java" value="6101" />
+          <entry key="java" value="6139" />
           <entry key="txt" value="81" />
           <entry key="xml" value="40" />
         </counts>
@@ -75,7 +75,7 @@
         <counts>
           <entry key="CMakeLists.txt" value="43" />
           <entry key="Groovy" value="28" />
-          <entry key="JAVA" value="6101" />
+          <entry key="JAVA" value="6139" />
           <entry key="ObjectiveC" value="109" />
           <entry key="PLAIN_TEXT" value="38" />
           <entry key="XML" value="40" />
@@ -155,8 +155,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/jcdr23/com/dev3d/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="165" column="151" selection-start-line="165" selection-start-column="151" selection-end-line="165" selection-end-column="151" />
+            <state relative-caret-position="250">
+              <caret line="411" column="50" selection-start-line="411" selection-start-column="50" selection-end-line="411" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#9584#9597#0" expanded="true" />
@@ -199,6 +199,7 @@
       <find>knnmatch</find>
       <find>setup</find>
       <find>essential</find>
+      <find>resize</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -262,6 +263,23 @@
               <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dev3D" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dev3D" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="jniLibs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dev3D" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dev3D" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="jniLibs" type="462c0819:PsiDirectoryNode" />
+              <item name="x86_64" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Dev3D" type="b2602c69:ProjectViewProjectNode" />
@@ -478,7 +496,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.1663113" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1663113" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -486,7 +504,7 @@
       <window_info id="Designer" order="6" />
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Run" order="0" sideWeight="0.49840087" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="1" sideWeight="0.8848614" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.8848614" visible="true" weight="0.329718" />
       <window_info anchor="bottom" id="TODO" order="2" sideWeight="0.49946696" weight="0.329718" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.329718" />
       <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.4978678" weight="0.329718" />
@@ -654,8 +672,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/jcdr23/com/dev3d/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="165" column="151" selection-start-line="165" selection-start-column="151" selection-end-line="165" selection-end-column="151" />
+        <state relative-caret-position="250">
+          <caret line="411" column="50" selection-start-line="411" selection-start-column="50" selection-end-line="411" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#9584#9597#0" expanded="true" />
