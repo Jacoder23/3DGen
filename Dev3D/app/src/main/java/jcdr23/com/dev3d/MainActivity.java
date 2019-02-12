@@ -274,13 +274,17 @@ public class MainActivity extends AppCompatActivity {
         Log.i("gonzaga", desResult[0].toString());
         Log.i("gonzaga", desResult[1].toString());
         MatOfDMatch[] array = new MatOfDMatch[999];
+        for(int a = 0; a < array.length; a++){
+            array[a] = new MatOfDMatch();
+        }
         List<MatOfDMatch> matches = Arrays.asList(array);
         MatOfDMatch filteredMatches = new MatOfDMatch();
-        for (int q = 0; q < desResult.length; q++) {
-            Log.i("gonzaga","---");
-            Log.i("gonzaga",desResult[q]);
-            Log.i("gonzaga",desResult[q+1]);
-            Log.i("gonzaga","---");
+        Log.i("gonzaga", Integer.toString(desResult.length));
+        for (int q = 0; desResult[q+1] != null; q++) {
+            Log.i("gonzaga", Integer.toString(desResult.length));
+            /*if(desResult[q+1] == null){
+                break;
+            }*/
             matcher.match(desResult[q], desResult[q+1], matches.get(q));
         }
         return matches;
