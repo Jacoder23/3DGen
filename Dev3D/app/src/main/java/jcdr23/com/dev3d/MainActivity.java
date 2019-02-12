@@ -11,6 +11,7 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.ListIterator;
 import java.util.Timer;
+import org.opencv.calib3d.*;
 import java.util.TimerTask;
 import java.util.stream.*;
 import android.support.annotation.Nullable;
@@ -142,8 +143,10 @@ public class MainActivity extends AppCompatActivity {
                             timer.scheduleAtFixedRate(t, 1, 1);
 
                             //MatOfDMatch[] FLANNMATCHResult =
-                                    kpDetect(files);
+                            List<MatOfDMatch> kpResults = kpDetect(files);
+                            log.setText(kpResults.get(0).size().toString() + " | " + kpResults.get(1).size().toString());
 
+                            Mat retVal = new Mat(findEssentialMat_1(kpResults.get(0).nativeObj, kpResults.get(1).nativeObj, 2563.7013, pp.x, pp.y, method, prob, threshold));
                             // Log.i("gonzaga", (FLANNMATCHResult).toString());
 
                             /*CompletableFuture CFkpDetect = CompletableFuture.supplyAsync(() -> kpDetect(files));
@@ -287,7 +290,28 @@ public class MainActivity extends AppCompatActivity {
             }*/
             matcher.match(desResult[q], desResult[q+1], matches.get(q));
         }
-        return matches;
+
+        List<MatOfDMatch> allGoodMatches = Arrays.asList(array);
+
+        float ratioThresh = 0.7f;
+        List<DMatch> listOfGoodMatches = new ArrayList<>();
+        MatOfDMatch goodMatches = null;
+        for (int w = 0; w < files.length; w++) {
+            for (int i = 0; i < files.length; i++) {
+                Log.i("gonzaga", matches.get(i).toString());
+                Log.i("gonzaga", Integer.toString(i));
+                if (matches.get(i).rows() > 1) {
+                    DMatch[] fMatches = matches.get(i).toArray();
+                    if (fMatches[i].distance < ratioThresh * fMatches[i+1].distance) {
+                        listOfGoodMatches.add(fMatches[i]);
+                    }
+                }
+            }
+            goodMatches = new MatOfDMatch();
+            goodMatches.fromList(listOfGoodMatches);
+            allGoodMatches.set(w, goodMatches);
+        }
+        return allGoodMatches;
         //} catch (Exception e){
         //    log.setText("An error has occurred");
         //    return null;
