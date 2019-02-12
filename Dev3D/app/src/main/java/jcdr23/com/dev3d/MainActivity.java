@@ -2,6 +2,7 @@
 
 package jcdr23.com.dev3d;
 
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import java.lang.String;
 import java.util.Timer;
@@ -127,9 +128,14 @@ public class MainActivity extends AppCompatActivity {
                                 }
                             };
                             timer.scheduleAtFixedRate(t, 1, 1);
-                            CompletableFuture CFkpDetect = CompletableFuture.supplyAsync(() -> kpDetect(files));
+
+                            MatOfDMatch[] FLANNMATCHResult = FLANNMATCH(kpDetect(files));
+
+                            Log.i("gonzaga", ((MatOfDMatch) FLANNMATCHResult[0]).toString());
+
+                            /*CompletableFuture CFkpDetect = CompletableFuture.supplyAsync(() -> kpDetect(files));
                             try {
-                                Log.i("gonzaga", CFkpDetect.get().toString());
+                                MatOfDMatch FLANNMATCHResult = FLANNMATCH(CFkpDetect.get());
                             } catch (InterruptedException e){
                                 // TODO: Error Code: 001
                                 Toast.makeText(MainActivity.this,"Error Code: 001",Toast.LENGTH_SHORT).show();
@@ -140,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
                                 Toast.makeText(MainActivity.this,"Error Code: 002",Toast.LENGTH_SHORT).show();
                                 Log.e("fricatta", "Error Code: 002");
                                 while(true){ log.setText("Errpr Code 002"); }
-                            }
+                            }*/
                         } else {
                             Toast.makeText(MainActivity.this,"Please select at least two images.",Toast.LENGTH_SHORT).show();
                         }
@@ -168,10 +174,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public Object[] kpDetect(String[] files) {
-        Mat[] desResult = new Mat[0];
-        MatOfKeyPoint[] kpResult = new MatOfKeyPoint[0];
+        Mat[] desResult = new Mat[999];
+        MatOfKeyPoint[] kpResult = new MatOfKeyPoint[999];
         for (int i = 0; i < files.length; i++) {
-            desResult = new Mat[500];
             Log.i("fricatta", "Alfred");
             TextView log = findViewById(R.id.txt_log);
             //try {
@@ -179,7 +184,7 @@ public class MainActivity extends AppCompatActivity {
             String userLog = "";
             MatOfKeyPoint keypoints = new MatOfKeyPoint();
             Mat des = new Mat();
-            ORB orb = ORB.create(150000, 1.3f, 11, 31, 0, 3, 0, 31);
+            ORB orb = ORB.create(10000, 1.4f, 11, 29, 0, 2, 0, 29);
             //for(int i = 0; i < files.length; i++) {
             Mat img = Imgcodecs.imread(files[i]);
             Size size = new Size(img.width()*0.5, img.height()*0.5);
@@ -195,7 +200,9 @@ public class MainActivity extends AppCompatActivity {
             kpResult[i] = keypoints;
         }
 
-        Object[] results = {desResult, kpResult};
+        Object[] results = new Object[2];
+        results[0] = desResult;
+        results[1] = kpResult;
 
         return results;
         //} catch (Exception e){
@@ -203,29 +210,54 @@ public class MainActivity extends AppCompatActivity {
         //    return null;
         //}
     }
-        public MatOfDMatch FLANNMATCH(Object[] args) {
-            Mat[] des = Mat[].class.cast(args[0]);
-            MatOfKeyPoint[] kp = MatOfKeyPoint[].class.cast(args[1]);
-            //-- Step 2: Matching descriptor vectors with a FLANN based matcher
-            // Since SURF is a floating-point descriptor NORM_L2 is used
-            DescriptorMatcher matcher = DescriptorMatcher.create(DescriptorMatcher.FLANNBASED);
-            List<MatOfDMatch> knnMatches = new ArrayList<>();
-            matcher.knnMatch(des[0], kp[0], knnMatches, 2);
-            //-- Filter matches using the Lowe's ratio test
-            float ratioThresh = 0.7f;
-            List<DMatch> listOfGoodMatches = new ArrayList<>();
-            for (int i = 0; i < knnMatches.size(); i++) {
-                if (knnMatches.get(i).rows() > 1) {
-                    DMatch[] matches = knnMatches.get(i).toArray();
-                    if (matches[0].distance < ratioThresh * matches[1].distance) {
-                        listOfGoodMatches.add(matches[0]);
+        public MatOfDMatch[] FLANNMATCH(Object[] h) {
+            // @Nullable
+            TextView log = findViewById(R.id.txt_log);
+            MatOfDMatch[] allGoodMatches = new MatOfDMatch[999];
+            Mat[] des = Mat[].class.cast(h[0]);
+            MatOfKeyPoint[] kp = MatOfKeyPoint[].class.cast(h[1]);
+            try {
+                for (int j = 0; j < des.length; j++) {
+                    //-- Step 2: Matching descriptor vectors with a FLANN based matcher
+                    // Since SURF is a floating-point descriptor NORM_L2 is used
+                    DescriptorMatcher matcher = DescriptorMatcher.create(DescriptorMatcher.FLANNBASED);
+                    List<MatOfDMatch> knnMatches = new ArrayList<>();
+                    matcher.knnMatch(des[0], kp[0], knnMatches, 2);
+                    //-- Filter matches using the Lowe's ratio test
+                    float ratioThresh = 0.7f;
+                    List<DMatch> listOfGoodMatches = new ArrayList<>();
+                    for (int i = 0; i < knnMatches.size(); i++) {
+                        if (knnMatches.get(i).rows() > 1) {
+                            DMatch[] matches = knnMatches.get(i).toArray();
+                            if (matches[0].distance < ratioThresh * matches[1].distance) {
+                                listOfGoodMatches.add(matches[0]);
+                            }
+                        }
                     }
+                    MatOfDMatch goodMatches = new MatOfDMatch();
+                    goodMatches.fromList(listOfGoodMatches);
+                    Log.i("gonzaga", goodMatches.toString());
+                    allGoodMatches[j] = goodMatches;
                 }
+                return allGoodMatches;
+            } catch (NullPointerException e){
+                // TODO: Error Code 003
+                Toast.makeText(MainActivity.this,"Error Code: 003",Toast.LENGTH_SHORT).show();
+                Log.e("fricatta", "Error Code: 003");
+                Log.e("gonzaga", "args 0: " + h[0].toString());
+                Log.e("gonzaga", "args 1: " + h[1].toString());
+                Log.e("gonzaga", "kp length: " + Integer.toString(kp.length));
+                Log.e("gonzaga", "des length: " + Integer.toString(des.length));
+                Log.e("gonzaga", "kp 0: " + kp[0].toString());
+                Log.e("gonzaga", "des 0: " + des[0].toString());
+                return null;
+            } catch (Exception e) {
+                // TODO: Error Code 004
+                Toast.makeText(MainActivity.this,"Error Code: 004",Toast.LENGTH_SHORT).show();
+                Log.e("fricatta", "Error Code: 004");
+                e.printStackTrace();
+                return null;
             }
-            MatOfDMatch goodMatches = new MatOfDMatch();
-            goodMatches.fromList(listOfGoodMatches);
-
-            return goodMatches;
         }
 
     public native String stringFromJNI();
