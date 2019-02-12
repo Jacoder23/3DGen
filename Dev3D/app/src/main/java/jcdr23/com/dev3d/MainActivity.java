@@ -10,6 +10,7 @@ import java.lang.Exception;
 import android.os.Bundle;
 import android.widget.Button;
 import android.view.View;
+import android.util.Pair;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
@@ -63,11 +64,15 @@ import org.opencv.android.OpenCVLoader;
 import org.opencv.android.Utils;
 import org.opencv.features2d.ORB;
 
-
 import com.github.angads25.filepicker.controller.DialogSelectionListener;
 import com.github.angads25.filepicker.model.DialogConfigs;
 import com.github.angads25.filepicker.model.DialogProperties;
 import com.github.angads25.filepicker.view.FilePickerDialog;
+
+import java.util.List;
+import java.util.ArrayList;
+import org.opencv.core.DMatch;
+import org.opencv.core.MatOfDMatch;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -162,10 +167,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public Mat[] kpDetect(String[] files) {
-        Mat[] result = new Mat[0];
+    public Object[] kpDetect(String[] files) {
+        Mat[] desResult = new Mat[0];
+        MatOfKeyPoint[] kpResult = new MatOfKeyPoint[0];
         for (int i = 0; i < files.length; i++) {
-            result = new Mat[500];
+            desResult = new Mat[500];
             Log.i("fricatta", "Alfred");
             TextView log = findViewById(R.id.txt_log);
             //try {
@@ -173,11 +179,11 @@ public class MainActivity extends AppCompatActivity {
             String userLog = "";
             MatOfKeyPoint keypoints = new MatOfKeyPoint();
             Mat des = new Mat();
-            ORB orb = ORB.create(150000, 1.4f, 8, 20, 0, 3);
+            ORB orb = ORB.create(150000, 1.3f, 11, 31, 0, 3, 0, 31);
             //for(int i = 0; i < files.length; i++) {
             Mat img = Imgcodecs.imread(files[i]);
-            /*Size size = new Size(img.width()*1, img.height()*1);
-            Imgproc.resize(img, img, size);*/
+            Size size = new Size(img.width()*0.5, img.height()*0.5);
+            Imgproc.resize(img, img, size);
             orb.detect(img, keypoints);
             orb.compute(img, keypoints, des);
             Log.i("fricatta", Double.toString((des.size().width) * (des.size().height)));
@@ -185,23 +191,47 @@ public class MainActivity extends AppCompatActivity {
             //}
             // log.setText(userLog);
             Log.i("gonzaga", des.toString());
-            result[i] = des;
+            desResult[i] = des;
+            kpResult[i] = keypoints;
         }
 
-        return result;
+        Object[] results = {desResult, kpResult};
+
+        return results;
         //} catch (Exception e){
         //    log.setText("An error has occurred");
         //    return null;
         //}
     }
+        public MatOfDMatch FLANNMATCH(Object[] args) {
+            Mat[] des = Mat[].class.cast(args[0]);
+            MatOfKeyPoint[] kp = MatOfKeyPoint[].class.cast(args[1]);
+            //-- Step 2: Matching descriptor vectors with a FLANN based matcher
+            // Since SURF is a floating-point descriptor NORM_L2 is used
+            DescriptorMatcher matcher = DescriptorMatcher.create(DescriptorMatcher.FLANNBASED);
+            List<MatOfDMatch> knnMatches = new ArrayList<>();
+            matcher.knnMatch(des[0], kp[0], knnMatches, 2);
+            //-- Filter matches using the Lowe's ratio test
+            float ratioThresh = 0.7f;
+            List<DMatch> listOfGoodMatches = new ArrayList<>();
+            for (int i = 0; i < knnMatches.size(); i++) {
+                if (knnMatches.get(i).rows() > 1) {
+                    DMatch[] matches = knnMatches.get(i).toArray();
+                    if (matches[0].distance < ratioThresh * matches[1].distance) {
+                        listOfGoodMatches.add(matches[0]);
+                    }
+                }
+            }
+            MatOfDMatch goodMatches = new MatOfDMatch();
+            goodMatches.fromList(listOfGoodMatches);
+
+            return goodMatches;
+        }
 
     public native String stringFromJNI();
 
     static {
         System.loadLibrary("hello-jni");
-    }
-    public void run(String[] args) {
-
     }
 
 }
