@@ -2,6 +2,23 @@
 
 package jcdr23.com.dev3d;
 
+import org.opencv.calib3d.Calib3d;
+import org.opencv.calib3d.*;
+
+import java.security.Key;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.opencv.core.KeyPoint;
+import org.opencv.core.Mat;
+import org.opencv.core.MatOfDouble;
+import org.opencv.core.MatOfPoint2f;
+import org.opencv.core.MatOfPoint3f;
+import org.opencv.core.Point;
+import org.opencv.core.Rect;
+import org.opencv.core.Size;
+import org.opencv.core.TermCriteria;
+import org.opencv.utils.Converters;
 import org.opencv.features2d.BFMatcher;
 import org.opencv.features2d.Params;
 import android.support.annotation.Nullable;
@@ -77,11 +94,9 @@ import org.opencv.core.Scalar;
 import org.opencv.core.Size;
 import org.opencv.android.CameraBridgeViewBase;
 import org.opencv.android.CameraBridgeViewBase.CvCameraViewListener2;
-import org.opencv.features2d.DescriptorExtractor;
 import org.opencv.features2d.DescriptorMatcher;
 import org.opencv.features2d.FastFeatureDetector;
 import org.opencv.features2d.FlannBasedMatcher;
-import org.opencv.xfeatures2d.SURF;
 import org.opencv.imgproc.Imgproc;
 import org.opencv.core.Rect;
 import org.opencv.imgcodecs.Imgcodecs;
@@ -154,18 +169,57 @@ public class MainActivity extends AppCompatActivity {
                             };
                             timer.scheduleAtFixedRate(t, 1, 1);
 
+                            try {
+                                Log.i("gonzaga", kpDetect(files).toString());
+                            } catch (Exception e){
+                                for(int d = 0; d < 50; d++) {
+                                    Log.e("gonzaga", "Let's try this again.");
+                                }
+                                kpDetect(files);
+                            }
+
                             //MatOfDMatch[] FLANNMATCHResult =
-                            List<MatOfDMatch> kpResults = kpDetect(files);
+                            // List<MatOfDMatch> kpResults = kpDetect(files);
                             //Log.i("gonzaga"kpResults.get(0).size().toString() + " | " + kpResults.get(1).size().toString());
-                            Point pp = new Point();
+/*                            Point pp = new Point();
                             pp.x = 0;
-                            pp.y = 0;
+                            pp.y = 0;*/
 
                             //Mat retVal = findEssentialMat(kpResults.get(0), kpResults.get(1), 2563.7013, pp, 0, 0.75, 1.5);
 
-                            Mat retVal = new Mat(findEssentialMat_4(kpResults.get(0).nativeObj, kpResults.get(1).nativeObj, 2563.7013, 0, 0, 0, 0.75, 2));
 
-                            log.setText(retVal.size().height + " | " + retVal.size().width);
+
+
+
+
+                            // Mat retVal = new Mat(findEssentialMat_4(kpResults.get(0).nativeObj, kpResults.get(1).nativeObj, 2563.7013, 0, 0, 0, 0.75, 2));
+                            /*Point pp = new Point();
+                            pp.x = 0;
+                            pp.y = 0;
+
+                            DMatch dm[] = kpResults.get(0).toArray();
+                            List<Point> lp1 = new ArrayList<Point>(dm.length);
+                            List<Point> lp2 = new ArrayList<Point>(dm.length);
+                            KeyPoint tkp[] = prevKP.toArray();
+                            KeyPoint qkp[] = actKP.toArray();
+                            for (int i = 0; i < dm.length; i++) {
+                                DMatch dm = dm[i];
+                                lp1.add(tkp[dm.trainIdx].pt);
+                                lp2.add(qkp[dm.queryIdx].pt);
+                            }
+
+                            MatOfPoint2f pointsPrev = new MatOfPoint2f(lp1.toArray(new Point[0]));
+                            MatOfPoint2f pointsAct  = new MatOfPoint2f(lp2.toArray(new Point[0]));*/
+
+                            //Mat retVal = Calib3d.findEssentialMat(kpResults.get(0), kpResults.get(1), 2563.7013, pp, 0, 0, 0.75);
+                            //Mat retVal = Calib3d.findFundamentalMat(kpResults.get(0), kpResults.get(1), 2563.7013);
+
+
+
+
+
+
+                            //log.setText(retVal.size().height + " | " + retVal.size().width);
 
                             // Log.i("gonzaga", (FLANNMATCHResult).toString());
 
@@ -212,34 +266,34 @@ public class MainActivity extends AppCompatActivity {
     public MatOfDMatch[] newPC(String[] files){
         MatOfDMatch[] results = new MatOfDMatch[500];
         for (int i = 0; i < files.length; i++) {
-            Mat img1 = Imgcodecs.imread(files[i], Imgcodecs.CV_LOAD_IMAGE_GRAYSCALE);
-            Mat img2 = Imgcodecs.imread(files[i+1], Imgcodecs.CV_LOAD_IMAGE_GRAYSCALE);
+            //Mat img1 = Imgcodecs.imread(files[i], Imgcodecs.CV_LOAD_IMAGE_GRAYSCALE);
+            //Mat img2 = Imgcodecs.imread(files[i+1], Imgcodecs.CV_LOAD_IMAGE_GRAYSCALE);
             /*Size size1 = new Size(img1.width()*0.5, img1.height()*0.5);
             Imgproc.resize(img1, img1, size1);
             Size size2 = new Size(img2.width()*0.5, img2.height()*0.5);
             Imgproc.resize(img2, img2, size2);*/
-            FastFeatureDetector detector = FastFeatureDetector.create();
-            DescriptorExtractor descriptor = DescriptorExtractor.create(DescriptorExtractor.ORB);
-            DescriptorMatcher matcher = DescriptorMatcher.create(DescriptorMatcher.BRUTEFORCE_HAMMING);
+            //FastFeatureDetector detector = FastFeatureDetector.create();
+            //DescriptorExtractor descriptor = DescriptorExtractor.create(DescriptorExtractor.ORB);
+            //DescriptorMatcher matcher = DescriptorMatcher.create(DescriptorMatcher.BRUTEFORCE_HAMMING);
 
 // DETECTION
 // first image
-            Mat descriptors1 = new Mat();
-            MatOfKeyPoint keypoints1 = new MatOfKeyPoint();
+           // Mat descriptors1 = new Mat();
+           // MatOfKeyPoint keypoints1 = new MatOfKeyPoint();
 
-            detector.detect(img1, keypoints1);
-            descriptor.compute(img1, keypoints1, descriptors1);
+          //  detector.detect(img1, keypoints1);
+           // descriptor.compute(img1, keypoints1, descriptors1);
 
 // second image
             Mat descriptors2 = new Mat();
             MatOfKeyPoint keypoints2 = new MatOfKeyPoint();
 
-            detector.detect(img2, keypoints2);
-            descriptor.compute(img2, keypoints2, descriptors2);
+          ///  detector.detect(img2, keypoints2);
+          //  descriptor.compute(img2, keypoints2, descriptors2);
 
 // MATCHING
 // match these two keypoints sets
-            List<MatOfDMatch> matches = new ArrayList<MatOfDMatch>();
+          //  List<MatOfDMatch> matches = new ArrayList<MatOfDMatch>();
             /*//-- Filter matches using the Lowe's ratio test
             float ratioThresh = 0.7f;
             List<DMatch> listOfGoodMatches = new ArrayList<>();
@@ -260,7 +314,32 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public List<MatOfDMatch> kpDetect(String[] files) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public Mat kpDetect(String[] files) {
+
         Mat[] desResult = new Mat[999];
         MatOfKeyPoint[] kpResult = new MatOfKeyPoint[999];
         for (int i = 0; i < files.length; i++) {
@@ -293,7 +372,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }*/
 
-        DescriptorMatcher matcher = DescriptorMatcher.create(DescriptorMatcher.BRUTEFORCE);
+        DescriptorMatcher matcher = DescriptorMatcher.create(DescriptorMatcher.BRUTEFORCE_HAMMINGLUT);
         Log.i("gonzaga", desResult[0].toString());
         Log.i("gonzaga", desResult[1].toString());
         MatOfDMatch[] array = new MatOfDMatch[999];
@@ -332,12 +411,63 @@ public class MainActivity extends AppCompatActivity {
             goodMatches.fromList(listOfGoodMatches);
             allGoodMatches.set(w, goodMatches);
         }
-        return allGoodMatches;
+
+        Calib3d.findFundamentalMat(new MatOfPoint2f(), new MatOfPoint2f());
+
+        /*Point pp = new Point();
+        pp.x = 0;
+        pp.y = 0;
+
+        DMatch[] dm = allGoodMatches.get(0);
+        List<Point> lp1 = new ArrayList<Point>(dm.length);
+        List<Point> lp2 = new ArrayList<Point>(dm.length);
+        KeyPoint tkp[] = prevKP.toArray();
+        KeyPoint qkp[] = actKP.toArray();
+        for (int i = 0; i < dm.length; i++) {
+            DMatch dm = dm[i];
+            lp1.add(tkp[dm.trainIdx].pt);
+            lp2.add(qkp[dm.queryIdx].pt);
+        }
+
+        MatOfPoint2f pointsPrev = new MatOfPoint2f(lp1.toArray(new Point[0]));
+        MatOfPoint2f pointsAct  = new MatOfPoint2f(lp2.toArray(new Point[0]));*/
+
+        return null;
         //} catch (Exception e){
         //    log.setText("An error has occurred");
         //    return null;
         //}
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         public List<MatOfDMatch> FLANNMATCH(Object[] h) {
             // @Nullable
             TextView log = findViewById(R.id.txt_log);
@@ -442,6 +572,7 @@ public class MainActivity extends AppCompatActivity {
     //
     //
     //
+/*
 
 
     public static final int
@@ -2034,5 +2165,6 @@ public class MainActivity extends AppCompatActivity {
     // C++:  void undistortPoints(Mat distorted, Mat& undistorted, Mat K, Mat D, Mat R = Mat(), Mat P = Mat())
     private static native void undistortPoints_0(long distorted_nativeObj, long undistorted_nativeObj, long K_nativeObj, long D_nativeObj, long R_nativeObj, long P_nativeObj);
     private static native void undistortPoints_1(long distorted_nativeObj, long undistorted_nativeObj, long K_nativeObj, long D_nativeObj);
+*/
 
 }

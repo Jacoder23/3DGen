@@ -43,6 +43,11 @@
 
 // JNIEXPORT jstring JNICALL Java_jcdr23_com_dev3d_MainActivity_stringFromJNI(JNIEnv * env, jobject obj);
 
+#include <jni.h>
+#include <string.h>
+
+//using namespace cv;
+
 JNIEXPORT jstring
 JNICALL Java_jcdr23_com_dev3d_MainActivity_stringFromJNI(JNIEnv * env, jobject obj){
     return (*env)->NewStringUTF(env, "Success");
