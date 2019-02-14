@@ -167,11 +167,20 @@ public class MainActivity extends AppCompatActivity {
                 "property float z" +
                 "end_header";
         for(int q = 0; q < disparityMap.height(); q++){
+            int g = 0;
             for (int w = 0; w < disparityMap.width(); w++) {
-                double[] j = disparityMap.get(w, q);
-                strin += Double.toString(j[0]) + " ";
-                strin += Double.toString(j[1]) + " ";
-                strin += Double.toString(j[2]) + "\n";
+                try {
+                    double[] j = disparityMap.get(w, q);
+                    strin += Double.toString(j[0]) + " ";
+                    strin += Double.toString(j[1]) + " ";
+                    strin += Double.toString(j[2]) + "\n";
+                } catch (ArrayIndexOutOfBoundsException e){
+                    Log.e("Sev", "ArrayOutOfBounds" + " | " + Integer.toString(q) + " | " + Integer.toString(w));
+                    g++;
+                    if(g > 3){
+                        break;
+                    }
+                }
             }
         }
 
