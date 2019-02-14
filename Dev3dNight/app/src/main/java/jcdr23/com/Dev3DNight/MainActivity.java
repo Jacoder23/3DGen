@@ -180,6 +180,12 @@ public class MainActivity extends AppCompatActivity {
                     if(g > 3){
                         break;
                     }
+                } catch (NullPointerException e) {
+                    q = disparityMap.height() * 2;
+                    break;
+                } catch (Exception e){
+                    q = disparityMap.height() * 2;
+                    break;
                 }
             }
         }
