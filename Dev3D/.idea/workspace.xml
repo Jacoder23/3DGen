@@ -2,49 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32ef976b-cfd9-494e-b4af-a1026a8dbcfc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/app/src/androidTest/java/jcdr23/com/Dev3DNight/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/app/src/main/java/jcdr23/com/Dev3DNight/MainActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/app/src/main/res/font/droid_sans.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/app/src/test/java/jcdr23/com/Dev3DNight/ExampleUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dev3dNight/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/jcdr23/com/dev3d/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/jcdr23/com/dev3d/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dev3dNight/app/src/main/java/jcdr23/com/Dev3DNight/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Dev3dNight/app/src/main/java/jcdr23/com/Dev3DNight/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dev3dNight/opencv/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Dev3dNight/opencv/AndroidManifest.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,8 +71,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="y" value="4" />
+    <option name="x" value="13" />
+    <option name="y" value="15" />
     <option name="width" value="974" />
     <option name="height" value="1097" />
   </component>

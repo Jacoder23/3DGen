@@ -11,6 +11,9 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.util.*;
+import java.io.File;
+import android.os.Environment;
+import java.io.FileWriter;
 
 import org.opencv.core.Size;
 import org.opencv.features2d.*;
@@ -26,6 +29,7 @@ import com.github.angads25.filepicker.model.DialogProperties;
 import com.github.angads25.filepicker.view.FilePickerDialog;
 
 import java.io.File;
+import java.io.IOException;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
@@ -120,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
         System.loadLibrary("opencv_java4");
     }
 
-    public Mat stereo(String[] files){
+    public String stereo(String[] files){
         Mat img1 = Imgcodecs.imread(files[0]);
         Mat img2 = Imgcodecs.imread(files[1]);
 
@@ -135,9 +139,43 @@ public class MainActivity extends AppCompatActivity {
         Imgproc.resize(img1, img1, leftSize, 0, 0, 0);
         Imgproc.resize(img2, img2, rightSize, 0, 0, 0);*/
 
-        Mat result = createDisparityMap(img1, img2);
+        Mat disparityMap = createDisparityMap(img1, img2);
 
-        return result;
+        /*Mat really = new Mat();
+        Mat q = new Mat();
+
+
+        for (int x = 0; x <= 4; x++) {
+            for (int y = 0; y <= 4; y++) {
+                q.put(x, y, 1.0);
+            }
+        }
+
+        double[] def = {0.0, 0.0};
+
+        Calib3d.stereoRectify();
+
+        Calib3d.reprojectImageTo3D(disparityMap, really, q);*/
+
+        String strin = "ply\n" +
+                "format ascii 1.0\n" +
+                "comment author: Jacob Meimban\n" +
+                "comment object: pointcloud" +
+                "element vertex 36" +
+                "property float x" +
+                "property float y" +
+                "property float z" +
+                "end_header";
+        for(int q = 0; q < disparityMap.height(); q++){
+            for (int w = 0; w < disparityMap.width(); w++) {
+                double[] j = disparityMap.get(w, q);
+                strin += Double.toString(j[0]) + " ";
+                strin += Double.toString(j[1]) + " ";
+                strin += Double.toString(j[2]) + "\n";
+            }
+        }
+
+        return strin;
     }
 
     @Override
@@ -173,9 +211,31 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onSelectedFilePaths(String[] files) {
                         if (files.length >= 2) {
-                            Mat okay = stereo(files);
+                            String king = stereo(files);
+                            Log.i("Sev", king);
 
-                            Imgcodecs.imwrite("imgResult", okay);
+                            File docsFolder = new File(Environment.getExternalStorageDirectory() + "/Documents");
+                            boolean isPresent = true;
+                            if (!docsFolder.exists()) {
+                                isPresent = docsFolder.mkdir();
+                            }
+                            if (isPresent) {
+                                if(Environment.getExternalStorageState() != null) {
+                                    try {
+                                        File file = new File(docsFolder.getAbsolutePath(), "finale.ply");
+                                        FileWriter writer = new FileWriter(file);
+                                        writer.append(king);
+                                        writer.flush();
+                                        writer.close();
+                                    } catch (IOException e) {
+                                        throw new RuntimeException("Checkmate.");
+                                    }
+                                }
+                            } else {
+                                // Failure
+                                throw new RuntimeException("Checkmate.");
+                            }
+
                         }
                     }
                 });
