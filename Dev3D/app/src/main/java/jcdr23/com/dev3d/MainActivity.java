@@ -3,28 +3,30 @@
 package jcdr23.com.dev3d;
 
 import org.opencv.calib3d.Calib3d;
-import org.opencv.calib3d.*;
+import org.opencv.features2d.Features2d;
+//import org.opencv.calib3d.*;
 
-import java.security.Key;
+//import java.security.Key;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.opencv.core.KeyPoint;
+//import org.opencv.core.KeyPoint;
 import org.opencv.core.Mat;
-import org.opencv.core.MatOfDouble;
+/*import org.opencv.core.MatOfDouble;
 import org.opencv.core.MatOfPoint2f;
-import org.opencv.core.MatOfPoint3f;
+import org.opencv.core.MatOfPoint3f;*/
 import org.opencv.core.Point;
-import org.opencv.core.Rect;
+/*import org.opencv.core.Rect;
 import org.opencv.core.Size;
 import org.opencv.core.TermCriteria;
 import org.opencv.utils.Converters;
 import org.opencv.features2d.BFMatcher;
 import org.opencv.features2d.Params;
+import android.support.annotation.Nullable;*/
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import java.lang.String;
-import java.util.ArrayList;
+/*import java.util.ArrayList;
 import java.util.List;
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfDouble;
@@ -38,22 +40,22 @@ import org.opencv.core.TermCriteria;
 import org.opencv.utils.Converters;
 import java.util.Collection;
 import java.util.Iterator;
-import java.util.ListIterator;
+import java.util.ListIterator;*/
 import java.util.Timer;
-import org.opencv.calib3d.*;
+//import org.opencv.calib3d.*;
 import java.util.TimerTask;
-import java.util.stream.*;
-import android.support.annotation.Nullable;
+//import java.util.stream.*;
+//import android.support.annotation.Nullable;
 import android.support.annotation.NonNull;
 import java.lang.Exception;
 import android.os.Bundle;
 import android.widget.Button;
 import android.view.View;
 import java.util.Arrays;
-import android.util.Pair;
-import android.content.Intent;
+//import android.util.Pair;
+//import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.support.annotation.NonNull;
+/*import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -61,17 +63,17 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RadioGroup;
+import android.widget.RadioGroup;*/
 import android.widget.TextView;
 import android.widget.Toast;
 import java.io.File;
-import java.util.concurrent.CompletableFuture;
+/*import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 import java.util.function.Supplier;
-import java.util.concurrent.CompletableFuture.AsynchronousCompletionTask;
+import java.util.concurrent.CompletableFuture.AsynchronousCompletionTask;*/
 
 import android.util.Log;
-import android.hardware.Camera;
+/*import android.hardware.Camera;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
@@ -83,26 +85,27 @@ import android.app.Dialog;
 import org.opencv.android.BaseLoaderCallback;
 import org.opencv.android.CameraBridgeViewBase.CvCameraViewFrame;
 import org.opencv.android.LoaderCallbackInterface;
-import org.opencv.core.Core;
+import org.opencv.core.Core;*/
 import org.opencv.core.CvType;
-import org.opencv.core.Mat;
+/*import org.opencv.core.Mat;
 import org.opencv.core.MatOfFloat;
-import org.opencv.core.MatOfInt;
+import org.opencv.core.MatOfInt;*/
 import org.opencv.core.MatOfKeyPoint;
-import org.opencv.core.Point;
+/*import org.opencv.core.Point;
 import org.opencv.core.Scalar;
 import org.opencv.core.Size;
 import org.opencv.android.CameraBridgeViewBase;
-import org.opencv.android.CameraBridgeViewBase.CvCameraViewListener2;
+import org.opencv.android.CameraBridgeViewBase.CvCameraViewListener2;*/
 import org.opencv.features2d.DescriptorMatcher;
-import org.opencv.features2d.FastFeatureDetector;
+/*import org.opencv.features2d.FastFeatureDetector;
 import org.opencv.features2d.FlannBasedMatcher;
 import org.opencv.imgproc.Imgproc;
-import org.opencv.core.Rect;
+import org.opencv.core.Rect;*/
+import org.opencv.features2d.Feature2D;
 import org.opencv.imgcodecs.Imgcodecs;
-import org.opencv.objdetect.CascadeClassifier;
+/*import org.opencv.objdetect.CascadeClassifier;*/
 import org.opencv.android.OpenCVLoader;
-import org.opencv.android.Utils;
+/*import org.opencv.android.Utils;*/
 import org.opencv.features2d.ORB;
 
 import com.github.angads25.filepicker.controller.DialogSelectionListener;
@@ -110,8 +113,8 @@ import com.github.angads25.filepicker.model.DialogConfigs;
 import com.github.angads25.filepicker.model.DialogProperties;
 import com.github.angads25.filepicker.view.FilePickerDialog;
 
-import java.util.List;
-import java.util.ArrayList;
+/*import java.util.List;
+import java.util.ArrayList;*/
 import org.opencv.core.DMatch;
 import org.opencv.core.MatOfDMatch;
 
@@ -157,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onSelectedFilePaths(String[] files) {
                         //files is the array of the paths of files selected by the Application User.
                         if(files.length >= 2){
-                            double time = 0;
+                            /*double time = 0;
                             Timer timer = new Timer();
                             TextView log = findViewById(R.id.txt_log);
                             TimerTask t = new TimerTask() {
@@ -166,8 +169,8 @@ public class MainActivity extends AppCompatActivity {
                                     time++;
                                     Log.i("fricatta", Double.toString(time / 1000));
                                 }
-                            };
-                            timer.scheduleAtFixedRate(t, 1, 1);
+                            };*/
+                            //timer.scheduleAtFixedRate(t, 1, 1);
 
                             try {
                                 Log.i("gonzaga", kpDetect(files).toString());
@@ -337,82 +340,141 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
     public Mat kpDetect(String[] files) {
+        Mat retVal = new Mat();
+        Log.i("gonzaga", "A");
+            Mat[] desResult = new Mat[999];
+            MatOfKeyPoint[] kpResult = new MatOfKeyPoint[999];
+        Log.i("gonzaga", "B");
+            //for (int i = 0; i < files.length; i++) {
+        int i = 0;
+                Log.i("gonzaga", "Alfred" + Integer.toString(i));
 
-        Mat[] desResult = new Mat[999];
-        MatOfKeyPoint[] kpResult = new MatOfKeyPoint[999];
-        for (int i = 0; i < files.length; i++) {
-            Log.i("fricatta", "Alfred");
-            TextView log = findViewById(R.id.txt_log);
-            //try {
-            log.setText("Setup is successful. Continuing.");
-            String userLog = "";
-            MatOfKeyPoint keypoints = new MatOfKeyPoint();
-            Mat des = new Mat();
-            ORB orb = ORB.create(10000, 1.4f, 11, 29, 0, 2, 0, 29);
-            //for(int i = 0; i < files.length; i++) {
-            Mat img = Imgcodecs.imread(files[i]);
-            /*Size size = new Size(img.width()*0.5, img.height()*0.5);
-            Imgproc.resize(img, img, size);*/
-            orb.detect(img, keypoints);
-            orb.compute(img, keypoints, des);
-            Log.i("fricatta", Double.toString((des.size().width) * (des.size().height)));
-            // userLog += Double.toString((des.size().width)) + " | " + Double.toString(des.size().height);
+                TextView log = findViewById(R.id.txt_log);
+                log.setText("Setup is successful. Continuing.");
+                String userLog = "";
+
+        Log.i("gonzaga", "next is mat des" + Integer.toString(i));
+
+                Mat des = new Mat();
+
+                Log.i("gonzaga", "Next is matofkp" + Integer.toString(i));
+
+                MatOfKeyPoint keypoints = new MatOfKeyPoint();
+
+                Log.i("gonzaga", "next is orb create" + Integer.toString(i));
+
+        //DescriptorMatcher extractor = DescriptorMatcher.create("");
+
+                //Feature2D orb = ORB.create(10000, 1.4f, 11, 29, 0, 2, 0, 29);
+                ORB orb = ORB.create(3000, 1.6f, 8, 16, 0, 2, 0, 14);
+
+                Log.i("gonzaga", "Alfred" + Integer.toString(i));
+
+                Mat img = Imgcodecs.imread(files[i]);
+
+        Log.i("gonzaga", "above is imgcodecs" + Integer.toString(i));
+
+        //Feature2D detect = ORB.create;
+
+                orb.detect(img, keypoints);
+
+        Log.i("gonzaga", "above is orb detect" + Integer.toString(i));
+
+        // TODO Problem area v
+
+                Feature2D help = orb;
+
+                // help.compute(img, keypoints, des);
+                if(img != new Mat() && keypoints != new MatOfKeyPoint() && des != new MatOfDMatch()) {
+
+                    /*orb.compute(new Mat(), new MatOfKeyPoint(), new MatOfDMatch());
+
+                    orb.compute(new Mat(), new MatOfKeyPoint(), des);*/
+
+                    MatOfKeyPoint kpNew = new MatOfKeyPoint();
+
+                    kpNew = keypoints;
+
+                    orb.compute(img, kpNew, des);
+
+                    /*orb.compute(img, keypoints, des);
+
+                    orb.compute(img, keypoints, des);
+
+                    orb.compute(img, keypoints, des);
+
+                    orb.compute(img, keypoints, des);*/
+
+                } else {
+                    Log.i("gonzaga", "Oof" + Integer.toString(i));
+                }
+
+        Log.i("gonzaga", "above is compute" + Integer.toString(i));
+
+        // TODO Problem area ^
+
+                Log.i("fricatta", Double.toString((des.size().width) * (des.size().height)));
+                Log.i("gonzaga", des.toString());
+                desResult[i] = des;
+                kpResult[i] = keypoints;
+
+                Log.i("gonzaga", "Alfred" + Integer.toString(i));
             //}
-            // log.setText(userLog);
-            Log.i("gonzaga", des.toString());
-            desResult[i] = des;
-            kpResult[i] = keypoints;
-        }
-
         /*for (int k = 0; k < desResult.length; k++) {
             if(desResult[0].type() != CvType.CV_32F) {
                 desResult[0].convertTo(desResult[0], CvType.CV_32F);
             }
         }*/
 
-        DescriptorMatcher matcher = DescriptorMatcher.create(DescriptorMatcher.BRUTEFORCE_HAMMINGLUT);
-        Log.i("gonzaga", desResult[0].toString());
-        Log.i("gonzaga", desResult[1].toString());
-        MatOfDMatch[] array = new MatOfDMatch[999];
-        for(int a = 0; a < array.length; a++){
-            array[a] = new MatOfDMatch();
-        }
-        List<MatOfDMatch> matches = Arrays.asList(array);
-        MatOfDMatch filteredMatches = new MatOfDMatch();
-        Log.i("gonzaga", Integer.toString(desResult.length));
-        for (int q = 0; desResult[q+1] != null; q++) {
+            /*Log.i("gonzaga", "Alfred");
+            DescriptorMatcher matcher = DescriptorMatcher.create(DescriptorMatcher.BRUTEFORCE_HAMMINGLUT);
+            Log.i("gonzaga", desResult[0].toString());
+            Log.i("gonzaga", desResult[1].toString());
+            MatOfDMatch[] array = new MatOfDMatch[999];
+            for (int a = 0; a < array.length; a++) {
+                array[a] = new MatOfDMatch();
+            }
+            List<MatOfDMatch> matches = Arrays.asList(array);
+            MatOfDMatch filteredMatches = new MatOfDMatch();
             Log.i("gonzaga", Integer.toString(desResult.length));
-            /*if(desResult[q+1] == null){
+            for (int q = 0; desResult[q + 1] != null; q++) {
+                Log.i("gonzaga", Integer.toString(desResult.length));
+            *//*if(desResult[q+1] == null){
                 break;
-            }*/
-            matcher.match(desResult[q], desResult[q+1], matches.get(q));
-        }
+            }*//*
+                matcher.match(desResult[q], desResult[q + 1], matches.get(q));
+            }
 
-        List<MatOfDMatch> allGoodMatches = Arrays.asList(array);
+            List<MatOfDMatch> allGoodMatches = Arrays.asList(array);
 
-        float ratioThresh = 0.7f;
-        List<DMatch> listOfGoodMatches = new ArrayList<>();
-        MatOfDMatch goodMatches = null;
-        for (int w = 0; w < files.length; w++) {
-            for (int i = 1; i < files.length; i++) {
-                Log.i("gonzaga", matches.get(i).toString());
-                Log.i("gonzaga", Integer.toString(i));
-                if (matches.get(i).rows() > 1) {
-                    DMatch[] fMatches = matches.get(i).toArray();
-                    // TODO: Random crash (ArrayOutOfBounds) here if you select less than 6-ish images.
-                    if (fMatches[i-1].distance < ratioThresh * fMatches[i].distance) {
-                        listOfGoodMatches.add(fMatches[i]);
+            float ratioThresh = 0.7f;
+            List<DMatch> listOfGoodMatches = new ArrayList<>();
+            MatOfDMatch goodMatches = null;
+            for (int w = 0; w < files.length; w++) {
+                for (int k = 1; k < files.length; k++) {
+                    Log.i("gonzaga", matches.get(k).toString());
+                    Log.i("gonzaga", Integer.toString(k));
+                    if (matches.get(k).rows() > 1) {
+                        DMatch[] fMatches = matches.get(k).toArray();
+                        // TODO: Random crash (ArrayOutOfBounds) here if you select less than 6-ish images.
+                        if (fMatches[k - 1].distance < ratioThresh * fMatches[k].distance) {
+                            listOfGoodMatches.add(fMatches[i]);
+                        }
                     }
                 }
+                goodMatches = new MatOfDMatch();
+                goodMatches.fromList(listOfGoodMatches);
+                allGoodMatches.set(w, goodMatches);
             }
-            goodMatches = new MatOfDMatch();
-            goodMatches.fromList(listOfGoodMatches);
-            allGoodMatches.set(w, goodMatches);
-        }
 
-        Calib3d.findFundamentalMat(new MatOfPoint2f(), new MatOfPoint2f());
+            Point pp = new Point();
+            pp.x = 0;
+            pp.y = 0;
+
+            retVal = Calib3d.findEssentialMat(allGoodMatches.get(0), allGoodMatches.get(1), 2563.7013, pp, 0, 0.75, 1.5);*/
+
+            return retVal;
 
         /*Point pp = new Point();
         pp.x = 0;
@@ -431,8 +493,6 @@ public class MainActivity extends AppCompatActivity {
 
         MatOfPoint2f pointsPrev = new MatOfPoint2f(lp1.toArray(new Point[0]));
         MatOfPoint2f pointsAct  = new MatOfPoint2f(lp2.toArray(new Point[0]));*/
-
-        return null;
         //} catch (Exception e){
         //    log.setText("An error has occurred");
         //    return null;
@@ -468,79 +528,15 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        public List<MatOfDMatch> FLANNMATCH(Object[] h) {
-            // @Nullable
-            TextView log = findViewById(R.id.txt_log);
-            MatOfDMatch[] allGoodMatches = new MatOfDMatch[999];
-            Mat[] des = Mat[].class.cast(h[0]);
-            MatOfKeyPoint[] kp = MatOfKeyPoint[].class.cast(h[1]);
-            for (int k = 0; k < des.length; k++) {
-                if(des[0].type() != CvType.CV_32F) {
-                    des[0].convertTo(des[0], CvType.CV_32F);
-                }
-            }
-            Mat descriptors1 = new Mat();
-            Mat descriptors2 = new Mat();
-            /*//try {
-                for (int j = 0; j < des.length; j++) {
-                    //-- Step 2: Matching descriptor vectors with a FLANN based matcher
-                    // Since SURF is a floating-point descriptor NORM_L2 is used
-                    */
-                    DescriptorMatcher matcher = DescriptorMatcher.create(DescriptorMatcher.FLANNBASED);
-                    List<MatOfDMatch> knnMatches = new ArrayList<>();
-                    matcher.knnMatch(des[0], des[1], knnMatches, 5);
-                    /*
-                    //-- Filter matches using the Lowe's ratio test
-                    float ratioThresh = 0.7f;
-                    List<DMatch> listOfGoodMatches = new ArrayList<>();
-                    for (int i = 0; i < knnMatches.size(); i++) {
-                        if (knnMatches.get(i).rows() > 1) {
-                            DMatch[] matches = knnMatches.get(i).toArray();
-                            if (matches[0].distance < ratioThresh * matches[1].distance) {
-                                listOfGoodMatches.add(matches[0]);
-                            }
-                        }
-                    }
-                    MatOfDMatch goodMatches = new MatOfDMatch();
-                    goodMatches.fromList(listOfGoodMatches);
-                    Log.i("gonzaga", goodMatches.toString());
-                    allGoodMatches[j] = goodMatches;
-                }
-            //return allGoodMatches;*/
-            return null;
-            /*} catch (NullPointerException e){
-                // TODO: Error Code 003
-                Toast.makeText(MainActivity.this,"Error Code: 003",Toast.LENGTH_SHORT).show();
-                Log.e("fricatta", "Error Code: 003");
-                Log.e("gonzaga", "args 0: " + h[0].toString());
-                Log.e("gonzaga", "args 1: " + h[1].toString());
-                Log.e("gonzaga", "kp length: " + Integer.toString(kp.length));
-                Log.e("gonzaga", "des length: " + Integer.toString(des.length));
-                Log.e("gonzaga", "kp 0: " + kp[0].toString());
-                Log.e("gonzaga", "des 0: " + des[0].toString());
-                return null;
-            } catch (Exception e) {
-                // TODO: Error Code 004
-                Toast.makeText(MainActivity.this,"Error Code: 004",Toast.LENGTH_SHORT).show();
-                Log.e("fricatta", "Error Code: 004");
-                e.printStackTrace();
-                Log.e("gonzaga", "args 0: " + h[0].toString());
-                Log.e("gonzaga", "args 1: " + h[1].toString());
-                Log.e("gonzaga", "kp length: " + Integer.toString(kp.length));
-                Log.e("gonzaga", "des length: " + Integer.toString(des.length));
-                Log.e("gonzaga", "kp 0: " + kp[0].toString());
-                Log.e("gonzaga", "des 0: " + des[0].toString());
-                Log.e("gonzaga", e.getClass().getCanonicalName());
-                return null;
-            }*/
-        }
 
-    public native String stringFromJNI();
 
-    static {
+
+        public native String stringFromJNI();
+
+    /*static {
         System.loadLibrary("hello-jni");
         //System.loadLibrary("libopencv_calib3d");
-    }
+    }*/
 
     //
     //

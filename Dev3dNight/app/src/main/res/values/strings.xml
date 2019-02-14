@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Dev3D NIGHT</string>
+    <string name="title">Dev3D NIGHT</string>
+    <string name="projName_Placeholder">Project Name</string>
+    <string name="srcDir_Placeholder">Please select output folder</string>
+    <string name="btn_selectFolder">Select output folder</string>
+    <string name="btn_selectImages">Open images</string>
+    <string name="btn_start">Start</string>
+    <string name="focal_Placeholder">Enter focal length (Default: 2563.7013)</string>
+</resources>

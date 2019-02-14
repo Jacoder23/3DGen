@@ -1,4 +1,3 @@
-include ':app'
+include ':app', 'opencv'
 include 'com.github.angads25:filepicker:1.1.1'
-include 'com.quickbirdstudios:opencv:3.4.4-contrib'
-include ':openCVLibrary340dev'
+include 'com.quickbirdstudios:opencv:4.0.1'
